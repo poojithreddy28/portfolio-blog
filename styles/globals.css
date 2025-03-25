@@ -1682,7 +1682,11 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
   font-size: 18px;
   line-height: 1.8;
 }
-
+.blog-content h1 {
+  font-size: 32px;
+  margin: 50px 0 25px;
+  font-weight: 600;
+}
 .blog-content h2 {
   font-size: 28px;
   margin: 40px 0 20px;

@@ -3,12 +3,12 @@ title: "Microservices Architecture: Principles and Patterns"
 date: "2025-03-24"
 category: "System Design"
 excerpt: "An in-depth exploration of microservices architecture, including key design principles, patterns, and implementation strategies."
-featuredImage: "/images/blog/microservices-header.jpg"
+featuredImage: "/assets/img/car_price.png"
 ---
 
-# Microservices Architecture: Principles and Patterns
+<!-- # Microservices Architecture: Principles and Patterns -->
 
-![Microservices Architecture Overview](/images/blog/microservices-header.jpg)
+![Microservices Architecture Overview](/assets/img/car_price.png)
 *Microservices architecture enables organizations to build scalable, resilient systems*
 
 Microservices architecture has emerged as a dominant approach for building complex, scalable applications. In this post, I'll explore the fundamental principles, common patterns, and practical strategies for implementing microservices effectively.
@@ -203,3 +203,4 @@ Microservices architecture provides powerful benefits for complex applications b
 
 *What microservices patterns have you found most useful in your projects? Share your experiences in the comments below.*
 ```
+
