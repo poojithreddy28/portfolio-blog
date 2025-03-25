@@ -22,7 +22,8 @@ jobs:
         run: npm ci
       
       - name: Build
-        run: npm run build && npm run export
+        run: npm run build
+      # Remove the export command - it's handled by output: export in next.config.js
       
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
