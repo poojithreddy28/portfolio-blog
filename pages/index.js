@@ -298,12 +298,12 @@ export default function Home() {
               <div className="education">
                 <div className="education-item" data-aos="fade-up" data-aos-delay="100">
                   <h4 className="school">Illinois Institute of Technology</h4>
-                  <p className="degree-field">Master's degree - Computer Science</p>
+                  <p className="degree-field">Master&apos;s degree - Computer Science</p>
                   <p className="date">August 2023 - Expected May 2025</p>
                 </div>
                 <div className="education-item" data-aos="fade-up" data-aos-delay="150">
                   <h4 className="school">Mahatma Gandhi Institute Of Technology</h4>
-                  <p className="degree-field">Bachelor's degree - Electronics and Communications Engineering</p>
+                  <p className="degree-field">Bachelor&apos;s degree - Electronics and Communications Engineering</p>
                   <p className="date">2018 - 2022</p>
                 </div>
               </div>
