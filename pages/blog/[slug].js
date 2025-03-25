@@ -8,8 +8,20 @@ import Icon from '../../components/Icon';
 export default function BlogPost({ postData }) {
   const router = useRouter();
   const [likes, setLikes] = useState(0);
+
+  // Handle case when the page is directly accessed
+  if (router.isFallback || !postData) {
+    return (
+      <Layout title="Loading...">
+        <div className="loading-container">
+          <div className="loading">Loading...</div>
+        </div>
+      </Layout>
+    );
+  }
   
   // Load likes from localStorage on component mount
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     const savedLikes = localStorage.getItem('blogPostLikes');
     if (savedLikes) {
