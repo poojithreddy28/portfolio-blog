@@ -8,8 +8,7 @@ featuredImage: "/assets/img/car_price.png"
 
 <!-- # Microservices Architecture: Principles and Patterns -->
 
-![Microservices Architecture Overview](/assets/img/car_price.png)
-*Microservices architecture enables organizations to build scalable, resilient systems*
+
 
 Microservices architecture has emerged as a dominant approach for building complex, scalable applications. In this post, I'll explore the fundamental principles, common patterns, and practical strategies for implementing microservices effectively.
 
