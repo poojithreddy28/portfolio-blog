@@ -3,11 +3,22 @@ import Layout from '../components/Layout';
 import Head from 'next/head';
 import Link from 'next/link';
 import Icon from '../components/Icon';
+import { initPortfolioScripts } from '../lib/portfolioScripts';
 
 export default function Home() {
   useEffect(() => {
-    // Initialize any client-side scripts here
+    // Import AOS CSS
+    import('aos/dist/aos.css');
+    
+    // Initialize portfolio scripts
+    const cleanup = initPortfolioScripts();
+    
+    // Clean up on component unmount
+    return () => {
+      if (cleanup) cleanup();
+    };
   }, []);
+
 
   return (
     <Layout title="Poojith Reddy Annachedu | Portfolio">
@@ -27,17 +38,14 @@ export default function Home() {
                 </li>
                 <li>
                   <a href="https://www.linkedin.com/in/poojith-reddy-annachedu/" target="_blank" rel="noopener noreferrer">
-                    LinkedIn
+                    <Icon name="linkedin" />
                   </a>
                 </li>
               </ul>
             </div>
             <div className="image" data-aos="fade-up">
               <div className="cover">
-                <svg className="lines-vector" viewBox="0 0 199 210">
-                  {/* Since SVG sprite is not easily usable in Next.js, we'll use an inline SVG or image */}
-                  {/* You can replace this with your actual lines-vector SVG */}
-                </svg>
+                <Icon name="lines-vector" />
               </div>
               <img className="avatar" src="/assets/img/avatar.png" alt="Poojith Reddy Annachedu" />
             </div>
@@ -107,10 +115,10 @@ export default function Home() {
               </div>
               <div className="slider-navigation">
                 <div className="prev">
-                  {/* Arrow left icon */}
+                  <Icon name="arrow-left" />
                 </div>
                 <div className="next">
-                  {/* Arrow right icon */}
+                  <Icon name="arrow-right" />
                 </div>
               </div>
             </div>
@@ -186,7 +194,7 @@ export default function Home() {
               </div>
               <div className="companies-list">
                 <div className="selector">
-                  {/* Arrow right icon */}
+                  <Icon name="arrow-right" />
                 </div>
                 <ul>
                   <li data-tab="apple" className="active" data-aos="fade-up">ADP</li>
@@ -300,7 +308,6 @@ export default function Home() {
                 </div>
               </div>
               <div className="skill">
-                {/* Here's the fix - don't wrap the <ul> inside a <p> */}
                 <div className="description" data-aos="fade-up" data-aos-delay="50">
                   <span className="boldme">Certifications</span>
                   <ul className="ulcont">
