@@ -14,23 +14,22 @@ export default function Blog({ allPostsData }) {
             </div>
           </div>
           
-          <div className="blog-grid">
+          {/* New improved blog listing layout */}
+          <div className="blog-posts-list">
             {allPostsData.length > 0 ? (
               allPostsData.map(({ id, title, date, excerpt, category }) => (
-                <article className="blog-card" key={id}>
-                  <div className="blog-card-content">
-                    <span className="blog-card-category">{category}</span>
-                    <h3 className="blog-card-title">{title}</h3>
-                    <div className="blog-card-meta">
-                      <time>{date}</time>
-                    </div>
-                    <p className="blog-card-excerpt">{excerpt}</p>
-                    <div className="blog-card-footer">
-                      <Link href={`/blog/${id}`} className="blog-read-more">
-                        Continue Reading →
-                      </Link>
-                    </div>
-                  </div>
+                <article className="blog-post-entry" key={id}>
+                  <div className="post-entry-tag">{category}</div>
+                  <h3 className="post-entry-title">
+                    <Link href={`/blog/${id}`}>
+                      {title}
+                    </Link>
+                  </h3>
+                  <div className="post-entry-date">{date}</div>
+                  <p className="post-entry-excerpt">{excerpt}</p>
+                  <Link href={`/blog/${id}`} className="post-entry-link">
+                    Continue Reading <span className="entry-arrow">→</span>
+                  </Link>
                 </article>
               ))
             ) : (

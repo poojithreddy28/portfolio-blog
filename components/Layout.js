@@ -35,6 +35,7 @@ export default function Layout({ children, title = 'Poojith Reddy Annachedu' }) 
         <meta name="description" content="Poojith Reddy's Portfolio and Blog" />
         <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/assets/img/fav.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -43,7 +44,7 @@ export default function Layout({ children, title = 'Poojith Reddy Annachedu' }) 
       <header className="header">
         <div className="container">
           <div className="logo" data-aos-delay="200" data-aos="fade-down">
-            <Link href="/">Poojith</Link>
+            {/* <Link href="/">Home</Link> */}
           </div>
           <nav className="nav">
             <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
@@ -56,6 +57,7 @@ export default function Layout({ children, title = 'Poojith Reddy Annachedu' }) 
               <li className="experience" data-aos-delay="300" data-aos="fade-down">
                 <Link href="/#experience">Experience</Link>
               </li>
+
               <li className="blog" data-aos-delay="350" data-aos="fade-down">
                 <Link href="/blog">Blog</Link>
               </li>
