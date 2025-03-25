@@ -1,6 +1,6 @@
-# Portfolio Blog with Next.js
+# Portfolio & Blog
 
-A modern, responsive personal portfolio and blog built with Next.js, featuring dark mode, markdown blog posts, and seamless AWS deployment.
+A modern, responsive personal portfolio and technical blog featuring a sleek design, dark mode, and markdown-powered content system. Built with industry-standard technologies and seamless AWS deployment.
 
 ## Features
 
