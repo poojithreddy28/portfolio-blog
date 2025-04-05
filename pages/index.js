@@ -66,9 +66,11 @@ export default function Home() {
         <i className="fas fa-laptop-code"></i> <strong>software engineering concepts</strong>. 
         Whether it’s breaking down ideas or writing tutorials, I aim to create valuable content to help others grow.
       </p>
-      <a href="/blog" className="blog-btn">
-        Explore Blog&nbsp; <i className="fas fa-arrow-right"></i>
-      </a>
+      <Link href="/blog" passHref>
+        <a className="blog-btn">
+          Explore Blog&nbsp; <i className="fas fa-arrow-right"></i>
+        </a>
+      </Link>
     </div>
   </div>
 </section>
