@@ -51,6 +51,27 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="blog-preview-section" id="blog">
+  <div className="container">
+    <div className="blog-preview-wrapper">
+      <h4 className="section-subtitle">— Recent Writings</h4>
+      <h2 className="section-title">From My Blog</h2>
+      <p className="blog-intro text">
+        I occasionally write about&nbsp;
+        <i className="fas fa-cogs"></i> <strong>backend systems</strong>,&nbsp;
+        <i className="fas fa-drafting-compass"></i> <strong>HLD & LLD</strong>,&nbsp;
+        <i className="fas fa-sitemap"></i> <strong>scalable distributed systems</strong>,&nbsp;
+        <i className="fas fa-code"></i> <strong>DevOps</strong>,&nbsp;
+        <i className="fas fa-terminal"></i> <strong>DSA</strong>, and&nbsp;
+        <i className="fas fa-laptop-code"></i> <strong>software engineering concepts</strong>. 
+        Whether it’s breaking down ideas or writing tutorials, I aim to create valuable content to help others grow.
+      </p>
+      <a href="/blog" className="blog-btn">
+        Explore Blog&nbsp; <i className="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
 
         {/* Skills Section */}
         <section className="service-section" id="services">
@@ -67,38 +88,52 @@ export default function Home() {
                 <ul className="bulletp">
                   <li>Data Structures and Algorithms</li>
                   <li>Object Oriented Programming</li>
+                  <li>High-Level Design (HLD)</li>
                   <li>API Integration</li>
                   <li>Agile Methodologies</li>
-                  <li>Machine Learning</li>
-                  <li>App Development</li>
-                  <li>Unit and Integration testing</li>
+                  <li>Microservices Architecture</li>
+                  <li>Design Patterns</li>
+                  <li>Clean Architecture</li>
+                  <li>Test-Driven Development</li>
+                  <li>SAFE Agile Framework</li>
+                  <li>CI/CD Pipelines</li>
                 </ul>
               </div>
               <div className="service-item" data-aos="fade-up" data-aos-delay="250">
                 <h4 className="vstitle">Languages/Frameworks</h4>
                 <ul className="bulletp">
+                  <li>Java (Core Java, Java EE)</li>
                   <li>Python</li>
-                  <li>Java</li>
-                  <li>C</li>
-                  <li>SQR</li>
-                  <li>Dart</li>
+                  <li>JavaScript</li>
                   <li>HTML, CSS</li>
-                  <li>Javascript</li>
-                  <li>Flask</li>
-                  <li>Flutter</li>
-                  <li>ADPR</li>
+                  <li>C</li>
+                  <li>Spring Boot</li>
+                  <li>Spring MVC</li>
+                  <li>Spring Security</li>
+                  <li>Spring Data JPA</li>
+                  <li>Spring Cloud</li>
+                  <li>ReactJS</li>
+                  <li>NextJS</li>
+                  <li>Hibernate</li>
+                  <li>JUnit</li>
+                  <li>Maven</li>
                 </ul>
               </div>
               <div className="service-item" data-aos="fade-up" data-aos-delay="300">
-                <h4 className="vstitle">Technologies & Databases</h4>
+                <h4 className="vstitle">Technologies & Infrastructure</h4>
                 <ul className="bulletp">
-                  <li>Big Data</li>
-                  <li>Data Analysis</li>
-                  <li>RESTAPI</li>
-                  <li>PostgreSQL, MySQL, Oracle DB</li>
-                  <li>Computer Networks</li>
-                  <li>Python Modules: NumPy, Pandas, Matplotlib, OpenCV</li>
-                  <li>Tools: Git, VS Code, UltraEdit, Jupiter Notebook, PyCharm</li>
+                  <li>AWS, Azure, GCP</li>
+                  <li>Docker, Kubernetes</li>
+                  <li>Jenkins</li>
+                  <li>Prometheus, Grafana</li>
+                  <li>Tempo, Loki</li>
+                  <li>Log Explorer, Log Rocket</li>
+                  <li>MySQL, PostgreSQL</li>
+                  <li>MongoDB, Elasticsearch</li>
+                  <li>Firebase</li>
+                  <li>ActiveMQ, Kafka</li>
+                  <li>REST API</li>
+                  <li>TLS-encrypted data transfer</li>
                 </ul>
               </div>
             </div>
@@ -107,145 +142,245 @@ export default function Home() {
 
         {/* Portfolio Section */}
         <section className="portfolio-section" id="portfolios">
-          <div className="container">
-            <div className="section-name" data-aos="fade-up" data-aos-delay="200">
-              <div className="content">
-                <p className="above-title">My works</p>
-                <h4 className="title">Highlighted Projects</h4>
-              </div>
-              <div className="slider-navigation">
-                <div className="prev">
-                  <Icon name="arrow-left" />
-                </div>
-                <div className="next">
-                  <Icon name="arrow-right" />
-                </div>
-              </div>
-            </div>
-            <div className="portfolio-item-wrapper">
-              <div className="swiper">
-                <div className="swiper-wrapper">
-                  <div className="swiper-slide" data-aos="fade-up" data-aos-delay="200">
-                    <article className="portfolio-item">
-                      <a href="https://github.com/poojithreddy28/The-Movie-Database" target="_blank" rel="noopener noreferrer">
-                        <figure>
-                          <img src="/assets/img/MovieDB.png" alt="The Movie Database" />
-                        </figure>
-                        <div className="detail">
-                          <h4 className="title">The Movie Database</h4>
-                          <div className="bottom">
-                            <span className="tag">Flutter</span>
-                            <span className="tag">RESTAPI</span>
-                            <span className="tag">Dart</span>
-                          </div>
-                        </div>
-                      </a>
-                    </article>
-                  </div>
-                  
-                  <div className="swiper-slide" data-aos="fade-up" data-aos-delay="300">
-                    <article className="portfolio-item">
-                      <a href="https://github.com/poojithreddy28/cars_price_prediction" target="_blank" rel="noopener noreferrer">
-                        <figure>
-                          <img src="/assets/img/car_price.png" alt="Used Cars Price Prediction" />
-                        </figure>
-                        <div className="detail">
-                          <h4 className="title">Used Cars Price Prediction</h4>
-                          <div className="bottom">
-                            <span className="tag">Machine Learning</span>
-                            <span className="tag">Python</span>
-                            <span className="tag">Scikit Learn</span>
-                          </div>
-                        </div>
-                      </a>
-                    </article>
-                  </div>
-                  
-                  <div className="swiper-slide" data-aos="fade-up" data-aos-delay="400">
-                    <article className="portfolio-item">
-                      <a href="https://github.com/poojithreddy28/emotion_detection_cnn" target="_blank" rel="noopener noreferrer">
-                        <figure>
-                          <img src="/assets/img/Emotion_Detection.png" alt="Emotion Detection Using Deep Learning" />
-                        </figure>
-                        <div className="detail">
-                          <h4 className="title">Emotion Detection Using Deep Learning</h4>
-                          <div className="bottom">
-                            <span className="tag">CNN</span>
-                            <span className="tag">Keras</span>
-                            <span className="tag">Tensorflow</span>
-                          </div>
-                        </div>
-                      </a>
-                    </article>
+  <div className="container">
+    <div className="section-name" data-aos="fade-up" data-aos-delay="200">
+      <div className="content">
+        <p className="above-title">My works</p>
+        <h4 className="title">Highlighted Projects</h4>
+      </div>
+      <div className="slider-navigation">
+        <div className="prev">
+          <Icon name="arrow-left" />
+        </div>
+        <div className="next">
+          <Icon name="arrow-right" />
+        </div>
+      </div>
+    </div>
+    <div className="portfolio-item-wrapper">
+      <div className="swiper">
+        <div className="swiper-wrapper">
+
+          {/* <!-- Microservices-Based Retail Management System --> */}
+          {/* <div className="swiper-slide" data-aos="fade-up" data-aos-delay="200">
+            <article className="portfolio-item">
+              <a href="https://github.com/poojithreddy28/SpringBoot-MicroServices" target="_blank" rel="noopener noreferrer">
+                <figure>
+                  <img src="/assets/img/retail_microservices.png" alt="Retail Management System" />
+                </figure>
+                <div className="detail">
+                  <h4 className="title">Retail Management System</h4>
+                  <div className="bottom">
+                    <span className="tag">Spring Boot</span>
+                    <span className="tag">Kafka</span>
+                    <span className="tag">MongoDB</span>
+                    <span className="tag">MySQL</span>
+                    <span className="tag">Docker</span>
+                    <span className="tag">Kubernetes</span>
                   </div>
                 </div>
-              </div>
-            </div>
+              </a>
+            </article>
           </div>
-        </section>
+
+          {/* <!-- SmartHomes E-commerce Platform --> */}
+          {/* <div className="swiper-slide" data-aos="fade-up" data-aos-delay="250">
+            <article className="portfolio-item">
+              <a href="https://github.com/poojithreddy28/SmartHomes" target="_blank" rel="noopener noreferrer">
+                <figure>
+                  <img src="/assets/img/smart_home.png" alt="SmartHomes E-commerce" />
+                </figure>
+                <div className="detail">
+                  <h4 className="title">SmartHomes E-commerce Platform</h4>
+                  <div className="bottom">
+                    <span className="tag">Flask</span>
+                    <span className="tag">React</span>
+                    <span className="tag">PostgreSQL</span>
+                    <span className="tag">OpenAI</span>
+                    <span className="tag">Docker</span>
+                    <span className="tag">Kubernetes</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div> */} 
+
+          {/* <!-- The Movie Database App --> */}
+          <div className="swiper-slide" data-aos="fade-up" data-aos-delay="300">
+            <article className="portfolio-item">
+              <a href="https://github.com/poojithreddy28/The-Movie-Database" target="_blank" rel="noopener noreferrer">
+                <figure>
+                  <img src="/assets/img/MovieDB.png" alt="The Movie Database" />
+                </figure>
+                <div className="detail">
+                  <h4 className="title">The Movie Database</h4>
+                  <div className="bottom">
+                    <span className="tag">Flutter</span>
+                    <span className="tag">Dart</span>
+                    <span className="tag">Firebase</span>
+                    <span className="tag">Provider</span>
+                    <span className="tag">Dio</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          {/* <!-- Used Cars Price Prediction --> */}
+          <div className="swiper-slide" data-aos="fade-up" data-aos-delay="350">
+            <article className="portfolio-item">
+              <a href="https://github.com/poojithreddy28/cars_price_prediction" target="_blank" rel="noopener noreferrer">
+                <figure>
+                  <img src="/assets/img/car_price.png" alt="Used Cars Price Prediction" />
+                </figure>
+                <div className="detail">
+                  <h4 className="title">Used Cars Price Prediction</h4>
+                  <div className="bottom">
+                    <span className="tag">Machine Learning</span>
+                    <span className="tag">Python</span>
+                    <span className="tag">Scikit-Learn</span>
+                    <span className="tag">Pandas</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          {/* <!-- Emotion Detection Using Deep Learning --> */}
+          <div className="swiper-slide" data-aos="fade-up" data-aos-delay="400">
+            <article className="portfolio-item">
+              <a href="https://github.com/poojithreddy28/emotion_detection_cnn" target="_blank" rel="noopener noreferrer">
+                <figure>
+                  <img src="/assets/img/Emotion_Detection.png" alt="Emotion Detection" />
+                </figure>
+                <div className="detail">
+                  <h4 className="title">Emotion Detection Using Deep Learning</h4>
+                  <div className="bottom">
+                    <span className="tag">TensorFlow</span>
+                    <span className="tag">Keras</span>
+                    <span className="tag">CNN</span>
+                    <span className="tag">Computer Vision</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         {/* Experience Section */}
         <section className="experience-section" id="experience">
-          <div className="container">
-            <div className="side">
-              <div className="section-name" data-aos="fade-up">
-                <p className="above-title">Career path</p>
-                <h4 className="title">Work Experience</h4>
-              </div>
-              <div className="companies-list">
-                <div className="selector">
-                  <Icon name="arrow-right" />
-                </div>
-                <ul>
-                  <li data-tab="apple" className="active" data-aos="fade-up">ADP</li>
-                  <li data-tab="microsoft" data-aos-delay="50" data-aos="fade-up">Indian Servers</li>
-                </ul>
-              </div>
-            </div>
-            <div className="content active" id="apple">
-              <div className="headline" data-aos-delay="50" data-aos="fade-up">
-                <h4 className="job-title">Member Technical</h4>
-                <p className="location">Hyderabad, India</p>
-                <p className="period">July 2022- July 2023</p>
-                <ul className="stack-list">
-                  <li className="tag">Java</li>
-                  <li className="tag">SQL</li>
-                  <li className="tag">Data Analysis</li>
-                  <li className="tag">SQR</li>
-                  <li className="tag">ADPR</li>
-                  <li className="tag">HCM</li>
-                </ul>
-              </div>
-              <div className="line"></div>
-              <ul className="responsibilities">
-                <li data-aos-delay="50" data-aos="fade-up">Developed optimized Programs for generating complex HCM-related reports using Structured Query Reporting Language (SQR) and Java.</li>
-                <li data-aos-delay="100" data-aos="fade-up">Implemented user controls to enhance the user interface, reducing complexity and addressing major panel issues in the front end. Applied pragmatic solutions to optimize the UX.</li>
-                <li data-aos-delay="150" data-aos="fade-up">Deployed 120-plus client applications from Enterprise Version EV5 to the latest version EV6 emphasizing high availability and low latency.</li>
-                <li data-aos-delay="200" data-aos="fade-up">Performed Data analysis on ad-hoc requests on whether clients can be upgraded to the latest version or not.</li>
-                <li data-aos-delay="250" data-aos="fade-up">Played a core role in developing the One-Next tool, focusing on automation and reducing work complexity by 40 percent. Collaborated with cross-functional teams, including product and design, to ensure effective implementation.</li>
-                <li data-aos-delay="300" data-aos="fade-up">Wrote SQL Scripts, for CRUD operations with key relations based on client requests before application deployments.</li>
-              </ul>
-            </div>
-            <div className="content" id="microsoft">
-              <div className="headline" data-aos-delay="50" data-aos="fade-up">
-                <h4 className="job-title">Machine Learning Intern</h4>
-                <p className="location">Hyderabad, India</p>
-                <p className="period">July 2021 - August 2021</p>
-                <ul className="stack-list">
-                  <li className="tag">Deep Learning</li>
-                  <li className="tag">Keras</li>
-                  <li className="tag">Tensorflow</li>
-                  <li className="tag">Machine Learning</li>
-                </ul>
-              </div>
-              <div className="line"></div>
-              <ul className="responsibilities">
-                <li>Has been exposed to supervised and unsupervised machine learning algorithms and learned the basics of deep learning tools like Tensorflow, Keras, and computer vision.</li>
-                <li>Assisted incoming interns in resolving doubts and improving their fundamentals in Python and Machine learning-related areas.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+  <div className="container">
+    <div className="side">
+      <div className="section-name" data-aos="fade-up">
+        <p className="above-title">Career path</p>
+        <h4 className="title">Work Experience</h4>
+      </div>
+      <div className="companies-list">
+        <div className="selector">
+          <Icon name="arrow-right" />
+        </div>
+        <ul>
+          <li data-tab="reality" className="active" data-aos="fade-up">Reality AI Lab</li>
+          <li data-tab="adp" data-aos-delay="50" data-aos="fade-up">ADP</li>
+          <li data-tab="prometheus" data-aos-delay="100" data-aos="fade-up">Prometheus Patent Services</li>
+          <li data-tab="indianservers" data-aos-delay="150" data-aos="fade-up">Indian Servers</li>
+        </ul>
+      </div>
+    </div>
+
+    <div className="content active" id="reality">
+      <div className="headline" data-aos-delay="50" data-aos="fade-up">
+        <h4 className="job-title">Software Engineer Intern</h4>
+        <p className="location">San Francisco, United States</p>
+        <p className="period">Oct 2024 – Present</p>
+        <ul className="stack-list">
+          <li className="tag">Python</li>
+          <li className="tag">FastAPI</li>
+          <li className="tag">LangGraph</li>
+          <li className="tag">Spring Boot</li>
+          <li className="tag">Firestore</li>
+          <li className="tag">PostgreSQL</li>
+        </ul>
+      </div>
+      <div className="line"></div>
+      <ul className="responsibilities">
+        <li>Designed and implemented backend solutions for AI workflows using Python FastAPI, LangGraph, and Spring Boot, improving agent responsiveness and system efficiency.</li>
+        <li>Enhanced MCQ generator with Plate.js, Next.js, Reveal.js, and Tiptap editor, boosting content generation efficiency and presentation capabilities.</li>
+        <li>Streamlined CI/CD pipelines with Docker and GitHub Actions; enabled zero-downtime Firebase and GCP CloudRun deployments with real-time debugging via Log Explorer and LogRocket.</li>
+      </ul>
+    </div>
+
+    <div className="content" id="adp">
+      <div className="headline" data-aos-delay="50" data-aos="fade-up">
+        <h4 className="job-title">Software Engineer</h4>
+        <p className="location">Hyderabad, India</p>
+        <p className="period">Apr 2022 – Jul 2023</p>
+        <ul className="stack-list">
+          <li className="tag">Spring Boot</li>
+          <li className="tag">Kafka</li>
+          <li className="tag">Redis</li>
+          <li className="tag">JPA</li>
+          <li className="tag">MongoDB</li>
+          <li className="tag">AWS</li>
+        </ul>
+      </div>
+      <div className="line"></div>
+      <ul className="responsibilities">
+        <li>Developed and refined backend services using Spring Boot MVC, Kafka, Redis, JPA, and Hibernate, improving throughput by 30% and reducing latency.</li>
+        <li>Launched microservices with MongoRepository handling 300+ daily fraud alerts, boosting fraud detection by 35%.</li>
+        <li>Built a data logging pipeline using AWS S3 for secure, scalable API storage and retrieval.</li>
+        <li>Led migration of 120+ applications from EV5 to EV6 with OneNext Tool, achieving 99.9% uptime and improved operational efficiency.</li>
+      </ul>
+    </div>
+
+    <div className="content" id="prometheus">
+      <div className="headline" data-aos-delay="50" data-aos="fade-up">
+        <h4 className="job-title">Software Developer Intern & Engineer</h4>
+        <p className="location">Hyderabad, India</p>
+        <p className="period">Dec 2020 – Mar 2022</p>
+        <ul className="stack-list">
+          <li className="tag">Java</li>
+          <li className="tag">Jakarta EE</li>
+          <li className="tag">Spring Boot</li>
+          <li className="tag">MySQL</li>
+          <li className="tag">NoSQL</li>
+          <li className="tag">AWS S3</li>
+        </ul>
+      </div>
+      <div className="line"></div>
+      <ul className="responsibilities">
+        <li>Automated IP workflows via a Jakarta EE system with Java Servlets, JSP, and MySQL, cutting manual workload by 40%.</li>
+        <li>Built a multi-threaded Spring Boot search API with indexing for legal data processing across MySQL and NoSQL databases.</li>
+        <li>Developed a secure patent repository using TLS and AWS S3, enabling compliant global data access.</li>
+      </ul>
+    </div>
+
+    <div className="content" id="indianservers">
+      <div className="headline" data-aos-delay="50" data-aos="fade-up">
+        <h4 className="job-title">Machine Learning Intern</h4>
+        <p className="location">Hyderabad, India</p>
+        <p className="period">Jul 2021 – Aug 2021</p>
+        <ul className="stack-list">
+          <li className="tag">TensorFlow</li>
+          <li className="tag">Keras</li>
+          <li className="tag">Python</li>
+          <li className="tag">Machine Learning</li>
+        </ul>
+      </div>
+      <div className="line"></div>
+      <ul className="responsibilities">
+        <li>Explored supervised and unsupervised ML algorithms and deep learning with Keras and TensorFlow.</li>
+        <li>Assisted interns in resolving Python and ML doubts, improving onboarding and team productivity.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
         {/* Blog/Volunteering Section */}
         <section className="blog-section" id="blog">

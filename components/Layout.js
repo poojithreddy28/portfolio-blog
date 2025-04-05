@@ -43,35 +43,46 @@ export default function Layout({ children, title = 'Poojith Reddy Annachedu' }) 
       
       <header className="header">
         <div className="container">
-          <div className="logo" data-aos-delay="200" data-aos="fade-down">
-            {/* <Link href="/">Home</Link> */}
-          </div>
+          {/* <div className="logo" data-aos-delay="200" data-aos="fade-down">
+            <Link href="/">Poojith</Link>
+          </div> */}
           <nav className="nav">
             <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-              <li className="services" data-aos-delay="200" data-aos="fade-down">
-                <Link href="/#services">Skills</Link>
-              </li>
-              <li className="portfolios" data-aos-delay="250" data-aos="fade-down">
-                <Link href="/#portfolios">Projects</Link>
-              </li>
-              <li className="experience" data-aos-delay="300" data-aos="fade-down">
-                <Link href="/#experience">Experience</Link>
-              </li>
-
-              <li className="blog" data-aos-delay="350" data-aos="fade-down">
+              <li className="blog" data-aos-delay="200" data-aos="fade-down">
                 <Link href="/blog">Blog</Link>
               </li>
-              <li className="education-skill mobile-link" data-aos-delay="350" data-aos="fade-down">
+              <li className="services" data-aos-delay="250" data-aos="fade-down">
+                <a href="https://github.com/poojithreddy28" target="_blank" rel="noopener noreferrer">
+                  {/* <Icon name="github" /> */}
+                  <span className="social-text">GitHub</span>
+                </a>
+              </li>
+              <li className="services" data-aos-delay="300" data-aos="fade-down">
+                <a href="https://www.linkedin.com/in/poojith-reddy-annachedu/" target="_blank" rel="noopener noreferrer">
+                  {/* <Icon name="linkedin" /> */}
+                  <span className="social-text">LinkedIn</span>
+                </a>
+              </li>
+              <li className="services" data-aos-delay="350" data-aos="fade-down">
+                <Link href="/#services">Skills</Link>
+              </li>
+              <li className="portfolios" data-aos-delay="400" data-aos="fade-down">
+                <Link href="/#portfolios">Projects</Link>
+              </li>
+              <li className="experience" data-aos-delay="450" data-aos="fade-down">
+                <Link href="/#experience">Experience</Link>
+              </li>
+              <li className="education-skill " data-aos-delay="500" data-aos="fade-down">
                 <Link href="/#education">Education</Link>
               </li>
-              <li className="contact mobile-link" data-aos-delay="350" data-aos="fade-down">
+              <li className="contact" data-aos-delay="550" data-aos="fade-down">
                 <Link href="/#contact">Contact</Link>
               </li>
-              <li className="mobile-link" data-aos-delay="350" data-aos="fade-down">
+              <li className="mobile-link" data-aos-delay="600" data-aos="fade-down">
                 <a href="/assets/PoojithResume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
               </li>
-              <li data-aos-delay="400" data-aos="fade-down" className="more-links">
-                <div className="more-links-icon">
+              <li data-aos-delay="650" data-aos="fade-down" className="more-links">
+                {/* <div className="more-links-icon">
                   <Icon name="more-links" />
                 </div>
                 <ul className="menu-list">
@@ -81,7 +92,7 @@ export default function Layout({ children, title = 'Poojith Reddy Annachedu' }) 
                   <li className="contact">
                     <Link href="/#contact">Contact</Link>
                   </li>
-                </ul>
+                </ul> */}
               </li>
             </ul>
           </nav>

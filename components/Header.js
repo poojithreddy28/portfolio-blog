@@ -52,10 +52,10 @@ export default function Header() {
         <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
           <ul className="nav-links">
             <li><Link href="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
+            <li><Link href="/blog" onClick={() => setIsMenuOpen(false)}>Blog</Link></li>
             <li><Link href="/#skills" onClick={() => setIsMenuOpen(false)}>Skills</Link></li>
             <li><Link href="/#projects" onClick={() => setIsMenuOpen(false)}>Projects</Link></li>
             <li><Link href="/#experience" onClick={() => setIsMenuOpen(false)}>Experience</Link></li>
-            <li><Link href="/blog" onClick={() => setIsMenuOpen(false)}>Blog</Link></li>
             <li className="mobile-only"><Link href="/#education" onClick={() => setIsMenuOpen(false)}>Education</Link></li>
             <li className="mobile-only"><Link href="/#contact" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
             <li className="more-links desktop-only">
