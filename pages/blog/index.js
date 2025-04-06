@@ -78,14 +78,14 @@ export default function Blog({ allPostsData }) {
                   <div className="post-entry-meta">
                      <div className="post-entry-tag">{post.category}</div>
                     <div className="post-actions">
-                      <button 
+                      {/* <button 
                         className={`like-button ${likes[post.id] > 0 ? 'liked' : ''}`} 
                         onClick={(e) => handleLike(post.id, e)}
                         aria-label="Like post"
                       >
                         <Icon name="heart" /> 
                         <span>{likes[post.id] || 0}</span>
-                      </button>
+                      </button> */}
                       <button 
                         className="share-button" 
                         onClick={(e) => handleShare(post, e)}

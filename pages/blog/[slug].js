@@ -99,9 +99,9 @@ export default function BlogPost({ postData }) {
               ← Back to all posts
             </Link>
             <div className="blog-footer-actions">
-              <button className="like-button" onClick={handleLike} aria-label="Like post">
+              {/* <button className="like-button" onClick={handleLike} aria-label="Like post">
                 <Icon name="heart" /> <span>{likes}</span>
-              </button>
+              </button> */}
               <button className="share-button" onClick={handleShare} aria-label="Share post">
                 <Icon name="share" />
               </button>

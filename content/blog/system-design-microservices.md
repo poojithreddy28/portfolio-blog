@@ -5,8 +5,6 @@ category: "System Design"
 excerpt: "A simple and beginner-friendly introduction to microservices architecture, its principles, and how to implement it."
 ---
 
-# Microservices Architecture: A Beginner’s Guide
-
 Microservices architecture has become a popular approach for building complex, scalable applications. In this post, we’ll explore the fundamental principles, common patterns, and practical strategies for implementing microservices effectively.
 
 ## What Are Microservices?
@@ -90,7 +88,6 @@ public class CircuitBreaker {
 
 Services communicate asynchronously through events, enhancing scalability and decoupling.
 
-*Image Source: Microsoft Docs*
 
 ## Challenges of Microservices
 
@@ -117,7 +114,7 @@ Microservices architecture offers a modular approach to building applications, p
 
 For a more in-depth understanding, you might find this video tutorial helpful:
 
-[![Microservices Explained: A Beginner's Guide](https://img.youtube.com/vi/TMCSJ1A6CkY/0.jpg)](https://www.youtube.com/watch?v=TMCSJ1A6CkY)
+[![Microservices Explained: A Beginner's Guide](https://youtu.be/pq9WUeKSjTM?list=PLJq-63ZRPdBsPWE24vdpmgeRFMRQyjvvj)
 *Video: Microservices Explained: A Beginner's Guide*
 
 
@@ -134,4 +131,3 @@ For a more in-depth understanding, you might find this video tutorial helpful:
 
 ---
 
-What are your thoughts on microservices? Have you worked on a microservices-based project before? Share your experiences in the comments below!
