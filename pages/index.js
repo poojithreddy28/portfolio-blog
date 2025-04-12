@@ -52,7 +52,7 @@ export default function Home() {
           </div>
         </section>
         <section className="blog-preview-section" id="blog">
-  <div className="container">
+  {/* <div className="container">
     <div className="blog-preview-wrapper">
       <h4 className="section-subtitle">— Recent Writings</h4>
       <h2 className="section-title">From My Blog</h2>
@@ -72,7 +72,7 @@ export default function Home() {
         </a>
       </Link>
     </div>
-  </div>
+  </div> */}
 </section>
 
         {/* Skills Section */}
