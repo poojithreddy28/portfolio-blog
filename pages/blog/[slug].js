@@ -4,6 +4,7 @@ import Layout from '../../components/Layout';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Link from 'next/link';
 import Icon from '../../components/Icon';
+import viewedBy from '../../public/assets/img/viewedby.png';
 
 export default function BlogPost({ postData }) {
   const router = useRouter();
@@ -11,7 +12,7 @@ export default function BlogPost({ postData }) {
   const [hasLiked, setHasLiked] = useState(false);
 
   const fetchStats = async () => {
-    const res = await fetch(`/api/getStats?postId=${postData.slug}`);
+    const res = await fetch(`${process.env.NEXT_PUBLIC_STATS_URL}?postId=${postData.slug}`);
     const data = await res.json();
     setStats(data);
   };
@@ -21,7 +22,7 @@ export default function BlogPost({ postData }) {
   }, [postData.slug]);
 
   useEffect(() => {
-    fetch('/api/updateView', {
+    fetch(process.env.NEXT_PUBLIC_VIEW_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ postId: postData.slug }),
@@ -37,7 +38,7 @@ export default function BlogPost({ postData }) {
 
   const handleLike = async () => {
     if (hasLiked) return;
-    await fetch('/api/updateLike', {
+    await fetch(process.env.NEXT_PUBLIC_LIKE_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ postId: postData.slug }),
@@ -49,13 +50,16 @@ export default function BlogPost({ postData }) {
 
   const handleShare = () => {
     if (navigator.share) {
-      navigator.share({
-        title: postData.title,
-        text: postData.excerpt || 'Check out this post',
-        url: window.location.href,
-      }).catch(console.log);
+      navigator
+        .share({
+          title: postData.title,
+          text: postData.excerpt || 'Check out this post',
+          url: window.location.href,
+        })
+        .catch(console.error);
     } else {
-      navigator.clipboard.writeText(window.location.href)
+      navigator.clipboard
+        .writeText(window.location.href)
         .then(() => alert('Link copied to clipboard!'))
         .catch(console.error);
     }
@@ -76,26 +80,28 @@ export default function BlogPost({ postData }) {
       <article className="blog-post">
         <div className="container">
           <div className="blog-header">
-
-            {/* Category and stats in a single clean row */}
-            <div style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              flexWrap: 'wrap',
-              gap: '12px',
-              marginBottom: '1rem',
-            }}>
-              <span className="blog-category">{postData.category}</span>
-              <div style={{
+            <div
+              style={{
                 display: 'flex',
+                justifyContent: 'space-between',
                 alignItems: 'center',
-                gap: '16px',
-                fontSize: '0.95rem',
-                color: '#444',
-              }}>
+                flexWrap: 'wrap',
+                gap: '12px',
+                marginBottom: '1rem',
+              }}
+            >
+              <span className="blog-category">{postData.category}</span>
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '16px',
+                  fontSize: '0.95rem',
+                  color: '#444',
+                }}
+              >
                 <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  👁 Viewed by <strong>{stats.views}</strong>
+                  👁  <strong>{stats.views}</strong>
                 </span>
 
                 <button
@@ -110,7 +116,7 @@ export default function BlogPost({ postData }) {
                     fontSize: '1rem',
                     cursor: hasLiked ? 'not-allowed' : 'pointer',
                     color: hasLiked ? '#aaa' : '#333',
-                    opacity: hasLiked ? 0.6 : 1
+                    opacity: hasLiked ? 0.6 : 1,
                   }}
                 >
                   <Icon name="heart" />
@@ -136,7 +142,6 @@ export default function BlogPost({ postData }) {
             </div>
 
             <h1 className="blog-title">{postData.title}</h1>
-
             <div className="blog-meta" style={{ marginTop: '8px', color: '#888' }}>
               <time>{postData.date}</time>
             </div>
@@ -160,17 +165,10 @@ export default function BlogPost({ postData }) {
 
 export async function getStaticPaths() {
   const paths = getAllPostIds();
-  return {
-    paths,
-    fallback: false,
-  };
+  return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.slug);
-  return {
-    props: {
-      postData,
-    },
-  };
+  return { props: { postData } };
 }

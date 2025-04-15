@@ -51,7 +51,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="blog-preview-section" id="blog">
+        {/* <section className="blog-preview-section" id="blog">
   {/* <div className="container">
     <div className="blog-preview-wrapper">
       <h4 className="section-subtitle">— Recent Writings</h4>
@@ -73,7 +73,7 @@ export default function Home() {
       </Link>
     </div>
   </div> */}
-</section>
+{/* </section> */} 
 
         {/* Skills Section */}
         <section className="service-section" id="services">
