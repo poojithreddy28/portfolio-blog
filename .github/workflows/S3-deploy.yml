@@ -21,6 +21,10 @@ jobs:
         run: npm ci
       
       - name: Build Next.js
+        env:
+          NEXT_PUBLIC_STATS_URL: ${{ vars.NEXT_PUBLIC_STATS_URL }}
+          NEXT_PUBLIC_VIEW_URL: ${{ vars.NEXT_PUBLIC_VIEW_URL }}
+          NEXT_PUBLIC_LIKE_URL: ${{ vars.NEXT_PUBLIC_LIKE_URL }}
         run: npm run build
       
       - name: Configure AWS credentials
