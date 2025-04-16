@@ -31,7 +31,7 @@ Traditionally, applications were built as **monoliths**—a single, unified code
 
 ### Monolithic Architecture
 
-![Monolithic Architecture](https://github-production-user-asset-6210df.s3.amazonaws.com/85048576/434163380-c6187a9b-6d29-4e2c-a07a-79d1c6118dcb.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250416%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250416T052619Z&X-Amz-Expires=300&X-Amz-Signature=8d098cbae2104e13f6913bcaaf21cf3631b6585d7919489c5317f589df59107c&X-Amz-SignedHeaders=host)  
+![Monolithic Architecture](https://portfolio-blog-assets.s3.us-east-1.amazonaws.com/IMG_7360.jpg)  
 **Source:** [ByteMonk](#)
 
 Monolithic applications bundle all functionalities—UI, business logic, and data access—into one codebase. While this simplicity is advantageous in the early stages, it can hinder growth as the system becomes more complex.
@@ -101,7 +101,7 @@ public class CircuitBreaker {
 
 ## 3. Database Per Service
 
-![Database Per Service](https://github-production-user-asset-6210df.s3.amazonaws.com/85048576/434164604-b3fd9f90-86d5-4483-bd53-478674dd57b1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250416%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250416T053058Z&X-Amz-Expires=300&X-Amz-Signature=e4bd6151b6f8ff4eecbb1233661d1c6e4245588a757392d283ce770d40ccc4c7&X-Amz-SignedHeaders=host)  
+![Database Per Service](https://portfolio-blog-assets.s3.us-east-1.amazonaws.com/IMG_7358.jpg ) 
 **Source:** [ByteMonk](#)
 
 In a microservices architecture, each service typically manages its own database. This pattern prevents different parts of the system from interfering with each other’s data, leading to better autonomy and more efficient scaling.
