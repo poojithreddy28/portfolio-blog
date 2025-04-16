@@ -1775,6 +1775,7 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
   color: var(--light-4);
   margin-bottom: 0.75rem;
   font-weight: 500;
+  color: #999dac;
 }
 
 .post-entry-title {
@@ -1842,7 +1843,7 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
 }
 
 [data-theme="dark"] .post-entry-excerpt {
-  color: var(--light-4);
+  color: var(--white);
 }
 
 /* Responsive adjustments */

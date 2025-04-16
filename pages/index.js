@@ -288,7 +288,7 @@ export default function Home() {
           <Icon name="arrow-right" />
         </div>
         <ul>
-          <li data-tab="reality" className="active" data-aos="fade-up">Reality AI Lab</li>
+          <li data-tab="reality" className="active" data-aos="fade-up">Reality AI</li>
           <li data-tab="adp" data-aos-delay="50" data-aos="fade-up">ADP</li>
           <li data-tab="prometheus" data-aos-delay="100" data-aos="fade-up">Prometheus Patent Services</li>
           <li data-tab="indianservers" data-aos-delay="150" data-aos="fade-up">Indian Servers</li>
