@@ -1764,10 +1764,10 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
   margin: 3rem auto 0;
 }
 
-.blog-post-entry {
+/* .blog-post-entry {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding-bottom: 2.5rem;
-}
+} */
 
 .post-entry-tag {
   font-size: 0.875rem;
