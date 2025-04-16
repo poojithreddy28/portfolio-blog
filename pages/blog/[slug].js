@@ -100,7 +100,7 @@ export default function BlogPost({ postData }) {
                   color: '#444',
                 }}
               >
-                <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <span style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#999dac' }}>
                   👁  <strong>{stats.views}</strong>
                 </span>
 
@@ -115,7 +115,7 @@ export default function BlogPost({ postData }) {
                     background: 'none',
                     fontSize: '1rem',
                     cursor: hasLiked ? 'not-allowed' : 'pointer',
-                    color: hasLiked ? '#aaa' : '#333',
+                    color: '#999dac',
                     opacity: hasLiked ? 0.6 : 1,
                   }}
                 >
@@ -132,7 +132,7 @@ export default function BlogPost({ postData }) {
                     border: 'none',
                     background: 'none',
                     fontSize: '1rem',
-                    color: '#333',
+                    color: '#999dac',
                     cursor: 'pointer',
                   }}
                 >

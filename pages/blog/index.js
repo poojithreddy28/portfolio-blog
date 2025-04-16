@@ -59,13 +59,13 @@ export default function Blog({ allPostsData }) {
                     style={{ display: 'flex', alignItems: 'center', gap: '16px', fontSize: '0.9rem', color: '#555' }}
                   >
                     {/* 👁 Views */}
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#999dac',}}>
                       <span role="img" aria-label="views">👁</span>
                       <span>{stats[post.id]?.views || 0}</span>
                     </div>
 
                     {/* ❤️ Likes */}
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px',color: '#999dac' }}>
                       <Icon name="heart" />
                       <span>{stats[post.id]?.likes || 0}</span>
                     </div>
@@ -73,7 +73,7 @@ export default function Blog({ allPostsData }) {
                     {/* 🔗 Share */}
                     <button
                       onClick={(e) => handleShare(post, e)}
-                      style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+                      style={{ background: 'none', border: 'none', cursor: 'pointer',color: '#999dac'}}
                       aria-label="Share post"
                     >
                       <Icon name="share" />
