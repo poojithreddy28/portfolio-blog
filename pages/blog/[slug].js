@@ -101,7 +101,7 @@ export default function BlogPost({ postData }) {
                 }}
               >
                 <span style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#999dac' }}>
-                  👁  <strong>{stats.views}</strong>
+                    <strong>{stats.views} views</strong>
                 </span>
 
                 <button
