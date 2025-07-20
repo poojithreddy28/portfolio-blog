@@ -60,7 +60,7 @@ export default function Blog({ allPostsData }) {
                   >
                     {/* 👁 Views */}
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#999dac',}}>
-                      <span role="img" aria-label="views">👁</span>
+                      // <span role="img" aria-label="views">👁</span>
                       <span>{stats[post.id]?.views || 0} Views</span>
                     </div>
 
