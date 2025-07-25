@@ -143,7 +143,8 @@ export default function Home() {
         </section>
 
         {/* Portfolio Section */}
-        <section className="portfolio-section" id="portfolios">
+{/* Portfolio Section */}
+<section className="portfolio-section" id="portfolios">
   <div className="container">
     <div className="section-name" data-aos="fade-up" data-aos-delay="200">
       <div className="content">
@@ -162,50 +163,6 @@ export default function Home() {
     <div className="portfolio-item-wrapper">
       <div className="swiper">
         <div className="swiper-wrapper">
-
-          {/* <!-- Microservices-Based Retail Management System --> */}
-          {/* <div className="swiper-slide" data-aos="fade-up" data-aos-delay="200">
-            <article className="portfolio-item">
-              <a href="https://github.com/poojithreddy28/SpringBoot-MicroServices" target="_blank" rel="noopener noreferrer">
-                <figure>
-                  <img src="/assets/img/retail_microservices.png" alt="Retail Management System" />
-                </figure>
-                <div className="detail">
-                  <h4 className="title">Retail Management System</h4>
-                  <div className="bottom">
-                    <span className="tag">Spring Boot</span>
-                    <span className="tag">Kafka</span>
-                    <span className="tag">MongoDB</span>
-                    <span className="tag">MySQL</span>
-                    <span className="tag">Docker</span>
-                    <span className="tag">Kubernetes</span>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </div>
-
-          {/* <!-- SmartHomes E-commerce Platform --> */}
-          {/* <div className="swiper-slide" data-aos="fade-up" data-aos-delay="250">
-            <article className="portfolio-item">
-              <a href="https://github.com/poojithreddy28/SmartHomes" target="_blank" rel="noopener noreferrer">
-                <figure>
-                  <img src="/assets/img/smart_home.png" alt="SmartHomes E-commerce" />
-                </figure>
-                <div className="detail">
-                  <h4 className="title">SmartHomes E-commerce Platform</h4>
-                  <div className="bottom">
-                    <span className="tag">Flask</span>
-                    <span className="tag">React</span>
-                    <span className="tag">PostgreSQL</span>
-                    <span className="tag">OpenAI</span>
-                    <span className="tag">Docker</span>
-                    <span className="tag">Kubernetes</span>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </div> */} 
 
           {/* <!-- The Movie Database App --> */}
           <div className="swiper-slide" data-aos="fade-up" data-aos-delay="300">
@@ -268,15 +225,79 @@ export default function Home() {
             </article>
           </div>
 
+          {/* <!-- GitHub Analytics Forecasting Dashboard --> */}
+          <div className="swiper-slide" data-aos="fade-up" data-aos-delay="450">
+            <article className="portfolio-item">
+              <a href="https://github.com/poojithreddy28/github-analytics-forecasting" target="_blank" rel="noopener noreferrer">
+                <figure>
+                  <img src="/assets/img/github_analytics.png" alt="GitHub Analytics Forecasting" />
+                </figure>
+                <div className="detail">
+                  <h4 className="title">GitHub Analytics Forecasting</h4>
+                  <div className="bottom">
+                    <span className="tag">React</span>
+                    <span className="tag">Flask</span>
+                    <span className="tag">TensorFlow</span>
+                    <span className="tag">GCP</span>
+                    <span className="tag">Docker</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          {/* <!-- RetailPulse Microservices --> */}
+          <div className="swiper-slide" data-aos="fade-up" data-aos-delay="500">
+            <article className="portfolio-item">
+              <a href="https://github.com/poojithreddy28/SpringBoot-MicroServices" target="_blank" rel="noopener noreferrer">
+                <figure>
+                  <img src="/assets/img/retail_microservices.png" alt="RetailPulse" />
+                </figure>
+                <div className="detail">
+                  <h4 className="title">RetailPulse</h4>
+                  <div className="bottom">
+                    <span className="tag">Spring Boot</span>
+                    <span className="tag">Kafka</span>
+                    <span className="tag">MongoDB</span>
+                    <span className="tag">MySQL</span>
+                    <span className="tag">Docker</span>
+                    <span className="tag">Kubernetes</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          {/* <!-- SmartHomes E-commerce Platform --> */}
+          <div className="swiper-slide" data-aos="fade-up" data-aos-delay="550">
+            <article className="portfolio-item">
+              <a href="https://github.com/poojithreddy28/SmartHomes" target="_blank" rel="noopener noreferrer">
+                <figure>
+                  <img src="/assets/img/smart_home.png" alt="SmartHomes E-commerce" />
+                </figure>
+                <div className="detail">
+                  <h4 className="title">SmartHomes</h4>
+                  <div className="bottom">
+                    <span className="tag">Java</span>
+                    <span className="tag">React</span>
+                    <span className="tag">FastAPI</span>
+                    <span className="tag">Docker</span>
+                    <span className="tag">OpenAI</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
         {/* Experience Section */}
-        <section className="experience-section" id="experience">
+
+<section className="experience-section" id="experience">
   <div className="container">
     <div className="side">
       <div className="section-name" data-aos="fade-up">
@@ -288,7 +309,7 @@ export default function Home() {
           <Icon name="arrow-right" />
         </div>
         <ul>
-          <li data-tab="reality" className="active" data-aos="fade-up">Reality Agent Platform</li>
+          <li data-tab="kaplan" className="active" data-aos="fade-up">Kaplan</li>
           <li data-tab="adp" data-aos-delay="50" data-aos="fade-up">ADP</li>
           <li data-tab="prometheus" data-aos-delay="100" data-aos="fade-up">Prometheus Patent Services</li>
           <li data-tab="indianservers" data-aos-delay="150" data-aos="fade-up">Indian Servers</li>
@@ -296,28 +317,31 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="content active" id="reality">
+    {/* Kaplan */}
+    <div className="content active" id="kaplan">
       <div className="headline" data-aos-delay="50" data-aos="fade-up">
-        <h4 className="job-title">Software Engineer Intern</h4>
-        <p className="location">San Francisco, United States</p>
-        <p className="period">Oct 2024 – Present</p>
+        <h4 className="job-title">Software Engineer</h4>
+        <p className="location">Chicago, United States</p>
+        <p className="period">May 2024 – May 2025</p>
         <ul className="stack-list">
-          <li className="tag">Python</li>
-          <li className="tag">FastAPI</li>
+          <li className="tag">Next.js</li>
+          <li className="tag">Reveal.js</li>
           <li className="tag">LangGraph</li>
-          <li className="tag">Spring Boot</li>
-          <li className="tag">Firestore</li>
-          <li className="tag">PostgreSQL</li>
+          <li className="tag">Gemini 1.5</li>
+          <li className="tag">Redis</li>
+          <li className="tag">Firebase</li>
+          <li className="tag">GCP</li>
         </ul>
       </div>
       <div className="line"></div>
       <ul className="responsibilities">
-        <li>Designed and implemented backend solutions for AI workflows using Python FastAPI, LangGraph, and Spring Boot, improving agent responsiveness and system efficiency.</li>
-        <li>Enhanced MCQ generator with Plate.js, Next.js, Reveal.js, and Tiptap editor, boosting content generation efficiency and presentation capabilities.</li>
-        <li>Streamlined CI/CD pipelines with Docker and GitHub Actions; enabled zero-downtime Firebase and GCP CloudRun deployments with real-time debugging via Log Explorer and LogRocket.</li>
+        <li>Built a presentation tool using Reveal.js and enhanced an MCQ generator with Plate.js and Next.js; improved UX by 25% using Redux Toolkit.</li>
+        <li>Engineered AI orchestration with LangGraph and Gemini 1.5, leveraging Redis caching to reduce response time and boost system efficiency by 30%.</li>
+        <li>Implemented CI/CD with GitHub Actions and Docker for Firebase and GCP Cloud Run; enabled zero-downtime rollouts and real-time debugging with LogRocket.</li>
       </ul>
     </div>
 
+    {/* ADP */}
     <div className="content" id="adp">
       <div className="headline" data-aos-delay="50" data-aos="fade-up">
         <h4 className="job-title">Software Engineer</h4>
@@ -326,21 +350,22 @@ export default function Home() {
         <ul className="stack-list">
           <li className="tag">Spring Boot</li>
           <li className="tag">Kafka</li>
-          <li className="tag">Redis</li>
-          <li className="tag">JPA</li>
-          <li className="tag">MongoDB</li>
+          <li className="tag">Spring MVC</li>
           <li className="tag">AWS</li>
+          <li className="tag">JPA</li>
+          <li className="tag">Lambda</li>
         </ul>
       </div>
       <div className="line"></div>
       <ul className="responsibilities">
-        <li>Developed and refined backend services using Spring Boot MVC, Kafka, Redis, JPA, and Hibernate, improving throughput by 30% and reducing latency.</li>
-        <li>Launched microservices with MongoRepository handling 300+ daily fraud alerts, boosting fraud detection by 35%.</li>
-        <li>Built a data logging pipeline using AWS S3 for secure, scalable API storage and retrieval.</li>
-        <li>Led migration of 120+ applications from EV5 to EV6 with OneNext Tool, achieving 99.9% uptime and improved operational efficiency.</li>
+        <li>Built backend services for payroll fraud detection using Spring MVC, Kafka, and JPA, increasing throughput by 60% and reducing latency.</li>
+        <li>Implemented secure logging with AWS Lambda and S3, improving W-2 processing speed 14× and reducing API latency by 55%.</li>
+        <li>Integrated Spring Security for method-level access control, strengthening data protection and compliance.</li>
+        <li>Migrated 120+ enterprise applications from EV5 to EV6 with OneNext tool using AWS cloud services.</li>
       </ul>
     </div>
 
+    {/* Prometheus Patent Services */}
     <div className="content" id="prometheus">
       <div className="headline" data-aos-delay="50" data-aos="fade-up">
         <h4 className="job-title">Software Developer Intern & Engineer</h4>
@@ -352,33 +377,35 @@ export default function Home() {
           <li className="tag">Spring Boot</li>
           <li className="tag">MySQL</li>
           <li className="tag">NoSQL</li>
-          <li className="tag">AWS S3</li>
         </ul>
       </div>
       <div className="line"></div>
       <ul className="responsibilities">
-        <li>Automated IP workflows via a Jakarta EE system with Java Servlets, JSP, and MySQL, cutting manual workload by 40%.</li>
-        <li>Built a multi-threaded Spring Boot search API with indexing for legal data processing across MySQL and NoSQL databases.</li>
-        <li>Developed a secure patent repository using TLS and AWS S3, enabling compliant global data access.</li>
+        <li>Automated IP workflows via Jakarta EE system using Java Servlets, JSP, and MySQL, reducing manual work and achieving 99.9% deadline compliance.</li>
+        <li>Built a multi-threaded Spring Boot search API with indexing optimizations for legal documents across MySQL and NoSQL.</li>
+        <li>Developed a secure patent repository using TLS encryption and AWS S3, enabling global data access with compliance.</li>
       </ul>
     </div>
 
+    {/* Indian Servers */}
     <div className="content" id="indianservers">
       <div className="headline" data-aos-delay="50" data-aos="fade-up">
-        <h4 className="job-title">Machine Learning Intern</h4>
-        <p className="location">Hyderabad, India</p>
-        <p className="period">Jul 2021 – Aug 2021</p>
+        <h4 className="job-title">Full-stack Developer (Apprenticeship)</h4>
+        <p className="location">Hyderabad, Telangana, India (Hybrid)</p>
+        <p className="period">May 2021 – Jul 2021</p>
         <ul className="stack-list">
-          <li className="tag">TensorFlow</li>
-          <li className="tag">Keras</li>
-          <li className="tag">Python</li>
-          <li className="tag">Machine Learning</li>
+          <li className="tag">React</li>
+          <li className="tag">Java</li>
+          <li className="tag">MongoDB</li>
+          <li className="tag">API Development</li>
+          <li className="tag">Authentication</li>
         </ul>
       </div>
       <div className="line"></div>
       <ul className="responsibilities">
-        <li>Explored supervised and unsupervised ML algorithms and deep learning with Keras and TensorFlow.</li>
-        <li>Assisted interns in resolving Python and ML doubts, improving onboarding and team productivity.</li>
+        <li>Developed a lightweight API testing tool using React and Java to streamline testing workflows.</li>
+        <li>Built APIs for authentication and DB operations, increasing reliability and maintainability.</li>
+        <li>Integrated MongoDB for logging API activity, enhancing observability and data security.</li>
       </ul>
     </div>
   </div>
@@ -436,18 +463,27 @@ export default function Home() {
                 <div className="education-item" data-aos="fade-up" data-aos-delay="100">
                   <h4 className="school">Illinois Institute of Technology</h4>
                   <p className="degree-field">Master&apos;s degree - Computer Science</p>
-                  <p className="date">August 2023 - Expected May 2025</p>
+                
                 </div>
                 <div className="education-item" data-aos="fade-up" data-aos-delay="150">
-                  <h4 className="school">Mahatma Gandhi Institute Of Technology</h4>
+                  <h4 className="school">Jawaharlal Nehru Technological University Hyderabad</h4>
                   <p className="degree-field">Bachelor&apos;s degree - Electronics and Communications Engineering</p>
-                  <p className="date">2018 - 2022</p>
+                  
                 </div>
               </div>
               <div className="skill">
                 <div className="description" data-aos="fade-up" data-aos-delay="50">
                   <span className="boldme">Certifications</span>
                   <ul className="ulcont">
+                    <li><a href="https://www.credly.com/badges/e033e1b0-0970-4122-8cc5-f50c004d3829/linked_in_profile" target="_blank" rel="noopener noreferrer">
+                        AWS Certified Cloud Practitioner – Amazon Web Services 
+                      </a></li> 
+                      <li><a href="https://learn.deeplearning.ai/accomplishments/e74ca176-400b-4832-88f9-99b1f8c6c8b8" target="_blank" rel="noopener noreferrer">
+                        AI agents in LangGraph - DeepLearning.AI
+                      </a></li> 
+                      <li><a href="https://learn.deeplearning.ai/accomplishments/704e9d26-a35f-446f-9c2f-3c2401981673?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        AI Agentic Design Patterns with AutoGen - DeepLearning.AI
+                      </a></li> 
                     <li>
                       <a href="https://www.coursera.org/account/accomplishments/verify/PL47A73VJDFG?utm_source=mobile&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course" target="_blank" rel="noopener noreferrer">
                         Certified by the University of Michigan in completing Getting Started with Python (05/2021)
