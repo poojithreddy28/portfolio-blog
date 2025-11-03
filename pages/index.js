@@ -28,8 +28,11 @@ export default function Home() {
             <div className="content" data-aos="fade-up">
               <h1 className="full-name">Poojith Reddy <span className="primary">Annachedu.</span></h1>
               <p className="about">
-                I am a Computer Science graduate student at Illinois Institute of Technology Chicago, and currently serving as a Software Engineer Intern at Reality AI. I specialize in full-stack development, cloud architecture, and AI integration with expertise in Spring ecosystem, microservices, and containerization technologies. My technical proficiency spans Java, Python, JavaScript, and frameworks like Spring Boot and React, complemented by experience with databases including PostgreSQL, MongoDB, and Elasticsearch. At ADP, I engineered high-performance backend services and microservices that improved system throughput by 30% and enhanced fraud detection efficiency by 35%. I&apos;ve  successfully implemented CI/CD pipelines, observability solutions, and scaled applications using AWS, Docker, and Kubernetes. With over 400 coding problems solved on platforms like LeetCode and certifications including AWS Cloud Practitioner, I combine strong algorithmic thinking with practical engineering skills to deliver reliable, scalable, and user-centric applications.
-              </p>
+                I’m a software engineer who loves the intersection of backend engineering and applied AI. My focus is designing reliable, scalable systems - clean architectures, clear contracts, and performance-first services - so teams can move fast without breaking things.
+
+On the Java side, I work with Spring Boot, Kafka, and cloud-native microservices, pairing CI/CD, containers, and observability to keep systems resilient and maintainable. On the AI side, I build orchestration layers, agentic workflows, and retrieval-backed experiences that automate complex tasks and improve developer and user outcomes.
+
+What drives me is turning complexity into simple, durable solutions. I enjoy tackling distributed systems problems, evolving cloud architectures, and shipping AI-enabled features that create real leverage for engineering teams. Open to full-time roles where Java backends and AI move from proof-of-concept to production.              </p>
               <ul className="social-icons">
                 <li>
                   <a href="https://github.com/poojithreddy28" target="_blank" rel="noopener noreferrer">
@@ -322,7 +325,7 @@ export default function Home() {
       <div className="headline" data-aos-delay="50" data-aos="fade-up">
         <h4 className="job-title">Software Engineer</h4>
         <p className="location">Chicago, United States</p>
-        <p className="period">May 2024 – May 2025</p>
+        <p className="period">May 2024 – Present</p>
         <ul className="stack-list">
           <li className="tag">Next.js</li>
           <li className="tag">Reveal.js</li>
