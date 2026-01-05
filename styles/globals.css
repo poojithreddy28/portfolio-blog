@@ -98,6 +98,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   color: var(--cinder);
+  overflow-x: hidden;
 }
 [data-theme="dark"] body {
   background: var(--midnight-express);
@@ -323,14 +324,17 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
   top: 0;
   z-index: 10;
   margin-top: 25px;
+  transition: all 0.3s ease-in-out;
 }
 .header.sticky {
-  background: rgba(255, 255, 255, .85);
-  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, .95);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--light-2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 [data-theme="dark"] .header.sticky {
-  background: rgba(40, 45, 63, .85);
+  background: rgba(40, 45, 63, .95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .header .container {
@@ -693,9 +697,12 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
 .portfolio-section .portfolio-item .detail .bottom {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 .portfolio-section .portfolio-item .detail .bottom .tag {
-  margin-right: 16px;
+  margin-right: 0;
+  margin-bottom: 4px;
 }
 .portfolio-section .portfolio-item .detail .bottom .link {
   display: inline-flex;
@@ -1343,30 +1350,36 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
   .header {
       margin-top: 5px;
       border-bottom: 1px solid var(--light-2);
+      position: relative;
   }
   .header .mobile-menu-toggle {
       display: block;
+      z-index: 1001;
   }
   .header .nav .nav-links {
       display: initial;
       position: absolute;
-      right: 62px;
+      right: 16px;
       top: 70px;
       padding: 16px 24px;
       background: var(--white);
       border: 1px solid var(--light-2);
       line-height: 32px;
-      width: 170px;
+      width: 200px;
       border-radius: 0 0 4px 4px;
       visibility: hidden;
       opacity: 0;
       height: 0;
-      transition: visibility, opacity .3s;
+      overflow: hidden;
+      transition: all .3s ease-in-out;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   .header .nav .nav-links.active {
       visibility: visible;
       opacity: 1;
       height: auto;
+      max-height: 400px;
   }
   [data-theme="dark"] .header .nav .nav-links {
       background: var(--midnight-express);

@@ -5,6 +5,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 import Link from 'next/link';
 import Icon from '../../components/Icon';
 import viewedBy from '../../public/assets/img/viewedby.png';
+import { initPortfolioScripts } from '../../lib/portfolioScripts';
 
 export default function BlogPost({ postData }) {
   const router = useRouter();
@@ -16,6 +17,15 @@ export default function BlogPost({ postData }) {
     const data = await res.json();
     setStats(data);
   };
+
+  useEffect(() => {
+    // Initialize portfolio scripts for header functionality
+    const cleanup = initPortfolioScripts();
+    
+    return () => {
+      if (cleanup) cleanup();
+    };
+  }, []);
 
   useEffect(() => {
     fetchStats();

@@ -3,9 +3,19 @@ import Layout from '../../components/Layout';
 import Link from 'next/link';
 import { getSortedPostsData } from '../../lib/posts';
 import Icon from '../../components/Icon';
+import { initPortfolioScripts } from '../../lib/portfolioScripts';
 
 export default function Blog({ allPostsData }) {
   const [stats, setStats] = useState({});
+
+  useEffect(() => {
+    // Initialize portfolio scripts for header functionality
+    const cleanup = initPortfolioScripts();
+    
+    return () => {
+      if (cleanup) cleanup();
+    };
+  }, []);
 
   useEffect(() => {
     const fetchStats = async () => {

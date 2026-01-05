@@ -28,11 +28,11 @@ export default function Home() {
             <div className="content" data-aos="fade-up">
               <h1 className="full-name">Poojith Reddy <span className="primary">Annachedu.</span></h1>
               <p className="about">
-                I’m a software engineer who loves the intersection of backend engineering and applied AI. My focus is designing reliable, scalable systems - clean architectures, clear contracts, and performance-first services - so teams can move fast without breaking things.
+                Software Engineer with 4+ years of experience building scalable backend systems and cloud-native platforms using Java Spring, Python, and AWS. Designed intelligent automation pipelines using modern agent frameworks, RAG architectures, embeddings, and MCP-based integrations to streamline document processing and operational workflows.
 
-On the Java side, I work with Spring Boot, Kafka, and cloud-native microservices, pairing CI/CD, containers, and observability to keep systems resilient and maintainable. On the AI side, I build orchestration layers, agentic workflows, and retrieval-backed experiences that automate complex tasks and improve developer and user outcomes.
+Delivered resilient microservices, distributed data pipelines, and AWS GCP infrastructure that improved system performance, reliability, and engineering efficiency at scale. My focus is on designing reliable, scalable systems with clean architectures and performance-first services that enable teams to move fast without breaking things.
 
-What drives me is turning complexity into simple, durable solutions. I enjoy tackling distributed systems problems, evolving cloud architectures, and shipping AI-enabled features that create real leverage for engineering teams. Open to full-time roles where Java backends and AI move from proof-of-concept to production.              </p>
+What drives me is turning complexity into simple, durable solutions while leveraging AI to create real leverage for engineering teams and operational workflows.              </p>
               <ul className="social-icons">
                 <li>
                   <a href="https://github.com/poojithreddy28" target="_blank" rel="noopener noreferrer">
@@ -107,38 +107,27 @@ What drives me is turning complexity into simple, durable solutions. I enjoy tac
               <div className="service-item" data-aos="fade-up" data-aos-delay="250">
                 <h4 className="vstitle">Languages/Frameworks</h4>
                 <ul className="bulletp">
-                  <li>Java (Core Java, Java EE)</li>
-                  <li>Python</li>
-                  <li>JavaScript</li>
-                  <li>HTML, CSS</li>
-                  <li>C</li>
-                  <li>Spring Boot</li>
-                  <li>Spring MVC</li>
-                  <li>Spring Security</li>
-                  <li>Spring Data JPA</li>
-                  <li>Spring Cloud</li>
-                  <li>ReactJS</li>
-                  <li>NextJS</li>
-                  <li>Hibernate</li>
-                  <li>JUnit</li>
-                  <li>Maven</li>
+                  <li>Java, Python, JavaScript, C, C++</li>
+                  <li>React.js, Next.js, AngularJS, Redux</li>
+                  <li>Spring Boot, Spring MVC, Spring Security</li>
+                  <li>Spring Data JPA, Jakarta EE</li>
+                  <li>LangChain, AutoGen, LangGraph, LangSmith</li>
+                  <li>RAG, Rasa, MCP</li>
+                  <li>REST API, FastAPI, Flask, Node.js</li>
+                  <li>HTML, CSS, JSON</li>
                 </ul>
               </div>
               <div className="service-item" data-aos="fade-up" data-aos-delay="300">
                 <h4 className="vstitle">Technologies & Infrastructure</h4>
                 <ul className="bulletp">
-                  <li>AWS, Azure, GCP</li>
-                  <li>Docker, Kubernetes</li>
-                  <li>Jenkins</li>
-                  <li>Prometheus, Grafana</li>
-                  <li>Tempo, Loki</li>
-                  <li>Log Explorer, Log Rocket</li>
-                  <li>MySQL, PostgreSQL</li>
-                  <li>MongoDB, Elasticsearch</li>
-                  <li>Firebase</li>
-                  <li>ActiveMQ, Kafka</li>
-                  <li>REST API</li>
-                  <li>TLS-encrypted data transfer</li>
+                  <li>AWS, GCP, Docker, Kubernetes</li>
+                  <li>Jenkins, GitHub Actions</li>
+                  <li>Prometheus, Grafana, Tempo, Loki</li>
+                  <li>MySQL, PostgreSQL, MongoDB</li>
+                  <li>Elasticsearch, Firebase, Supabase</li>
+                  <li>DynamoDB, Kafka, SNS</li>
+                  <li>OAuth2, JWT, IAM</li>
+                  <li>CI/CD Pipelines, JIRA</li>
                 </ul>
               </div>
             </div>
@@ -167,104 +156,46 @@ What drives me is turning complexity into simple, durable solutions. I enjoy tac
       <div className="swiper">
         <div className="swiper-wrapper">
 
-          {/* <!-- The Movie Database App --> */}
+          {/* <!-- GitHub Analytics Forecasting Platform --> */}
           <div className="swiper-slide" data-aos="fade-up" data-aos-delay="300">
-            <article className="portfolio-item">
-              <a href="https://github.com/poojithreddy28/The-Movie-Database" target="_blank" rel="noopener noreferrer">
-                <figure>
-                  <img src="/assets/img/MovieDB.png" alt="The Movie Database" />
-                </figure>
-                <div className="detail">
-                  <h4 className="title">The Movie Database</h4>
-                  <div className="bottom">
-                    <span className="tag">Flutter</span>
-                    <span className="tag">Dart</span>
-                    <span className="tag">Firebase</span>
-                    <span className="tag">Provider</span>
-                    <span className="tag">Dio</span>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </div>
-
-          {/* <!-- Used Cars Price Prediction --> */}
-          <div className="swiper-slide" data-aos="fade-up" data-aos-delay="350">
-            <article className="portfolio-item">
-              <a href="https://github.com/poojithreddy28/cars_price_prediction" target="_blank" rel="noopener noreferrer">
-                <figure>
-                  <img src="/assets/img/car_price.png" alt="Used Cars Price Prediction" />
-                </figure>
-                <div className="detail">
-                  <h4 className="title">Used Cars Price Prediction</h4>
-                  <div className="bottom">
-                    <span className="tag">Machine Learning</span>
-                    <span className="tag">Python</span>
-                    <span className="tag">Scikit-Learn</span>
-                    <span className="tag">Pandas</span>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </div>
-
-          {/* <!-- Emotion Detection Using Deep Learning --> */}
-          <div className="swiper-slide" data-aos="fade-up" data-aos-delay="400">
-            <article className="portfolio-item">
-              <a href="https://github.com/poojithreddy28/emotion_detection_cnn" target="_blank" rel="noopener noreferrer">
-                <figure>
-                  <img src="/assets/img/Emotion_Detection.png" alt="Emotion Detection" />
-                </figure>
-                <div className="detail">
-                  <h4 className="title">Emotion Detection Using Deep Learning</h4>
-                  <div className="bottom">
-                    <span className="tag">TensorFlow</span>
-                    <span className="tag">Keras</span>
-                    <span className="tag">CNN</span>
-                    <span className="tag">Computer Vision</span>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </div>
-
-          {/* <!-- GitHub Analytics Forecasting Dashboard --> */}
-          <div className="swiper-slide" data-aos="fade-up" data-aos-delay="450">
             <article className="portfolio-item">
               <a href="https://github.com/poojithreddy28/github-analytics-forecasting" target="_blank" rel="noopener noreferrer">
                 <figure>
-                  <img src="/assets/img/github_analytics.png" alt="GitHub Analytics Forecasting" />
+                  <img src="/assets/img/github_analytics.png" alt="GitHub Analytics Forecasting Platform" />
                 </figure>
                 <div className="detail">
-                  <h4 className="title">GitHub Analytics Forecasting</h4>
+                  <h4 className="title">GitHub Analytics Forecasting Platform</h4>
                   <div className="bottom">
-                    <span className="tag">React</span>
-                    <span className="tag">Flask</span>
-                    <span className="tag">TensorFlow</span>
-                    <span className="tag">GCP</span>
+                    <span className="tag">React.js</span>
+                    <span className="tag">FastAPI</span>
                     <span className="tag">Docker</span>
+                    <span className="tag">GCP</span>
+                    <span className="tag">Cloud Run</span>
+                    <span className="tag">LangChain</span>
                   </div>
                 </div>
               </a>
             </article>
           </div>
 
-          {/* <!-- RetailPulse Microservices --> */}
-          <div className="swiper-slide" data-aos="fade-up" data-aos-delay="500">
+          {/* <!-- RetailPulse SmartHomes --> */}
+          <div className="swiper-slide" data-aos="fade-up" data-aos-delay="350">
             <article className="portfolio-item">
               <a href="https://github.com/poojithreddy28/SpringBoot-MicroServices" target="_blank" rel="noopener noreferrer">
                 <figure>
-                  <img src="/assets/img/retail_microservices.png" alt="RetailPulse" />
+                  <img src="/assets/img/retail_microservices.png" alt="RetailPulse SmartHomes" />
                 </figure>
                 <div className="detail">
-                  <h4 className="title">RetailPulse</h4>
+                  <h4 className="title">RetailPulse SmartHomes</h4>
                   <div className="bottom">
-                    <span className="tag">Spring Boot</span>
+                    <span className="tag">ReactJS</span>
+                    <span className="tag">FastAPI</span>
                     <span className="tag">Kafka</span>
                     <span className="tag">MongoDB</span>
-                    <span className="tag">MySQL</span>
-                    <span className="tag">Docker</span>
+                    <span className="tag">OpenAI</span>
+                    <span className="tag">RAG</span>
                     <span className="tag">Kubernetes</span>
+                    <span className="tag">Prometheus</span>
                   </div>
                 </div>
               </a>
@@ -272,14 +203,14 @@ What drives me is turning complexity into simple, durable solutions. I enjoy tac
           </div>
 
           {/* <!-- SmartHomes E-commerce Platform --> */}
-          <div className="swiper-slide" data-aos="fade-up" data-aos-delay="550">
+          <div className="swiper-slide" data-aos="fade-up" data-aos-delay="400">
             <article className="portfolio-item">
               <a href="https://github.com/poojithreddy28/SmartHomes" target="_blank" rel="noopener noreferrer">
                 <figure>
                   <img src="/assets/img/smart_home.png" alt="SmartHomes E-commerce" />
                 </figure>
                 <div className="detail">
-                  <h4 className="title">SmartHomes</h4>
+                  <h4 className="title">SmartHomes E-commerce Platform</h4>
                   <div className="bottom">
                     <span className="tag">Java</span>
                     <span className="tag">React</span>
@@ -312,35 +243,61 @@ What drives me is turning complexity into simple, durable solutions. I enjoy tac
           <Icon name="arrow-right" />
         </div>
         <ul>
-          <li data-tab="kaplan" className="active" data-aos="fade-up">Kaplan</li>
-          <li data-tab="adp" data-aos-delay="50" data-aos="fade-up">ADP</li>
-          <li data-tab="prometheus" data-aos-delay="100" data-aos="fade-up">Prometheus Patent Services</li>
-          <li data-tab="indianservers" data-aos-delay="150" data-aos="fade-up">Indian Servers</li>
+          <li data-tab="kyron" className="active" data-aos="fade-up">Kyron Medical</li>
+          <li data-tab="kaplan" data-aos-delay="50" data-aos="fade-up">Kaplan</li>
+          <li data-tab="adp" data-aos-delay="100" data-aos="fade-up">ADP</li>
+          <li data-tab="prometheus" data-aos-delay="150" data-aos="fade-up">Prometheus Patent Services</li>
         </ul>
       </div>
     </div>
 
+    {/* Kyron Medical */}
+    <div className="content active" id="kyron">
+      <div className="headline" data-aos-delay="50" data-aos="fade-up">
+        <h4 className="job-title">Software Engineer</h4>
+        <p className="location">United States</p>
+        <p className="period">May 2025 – Present</p>
+        <ul className="stack-list">
+          <li className="tag">OpenAI APIs</li>
+          <li className="tag">LangChain</li>
+          <li className="tag">Python</li>
+          <li className="tag">AWS</li>
+          <li className="tag">PostgreSQL</li>
+          <li className="tag">S3</li>
+          <li className="tag">IAM</li>
+        </ul>
+      </div>
+      <div className="line"></div>
+      <ul className="responsibilities">
+        <li>Developed AI-powered utilities and internal tooling using OpenAI APIs, LangChain, and embeddings for document classification and claims triage, accelerating internal review workflows and cutting clerical workloads by 20%.</li>
+        <li>Implemented scalable data-processing pipelines, including a Python-based scraper for CVS client workflows, extracting structured healthcare data from multi-step web flows and increasing downstream processing accuracy by 30%.</li>
+        <li>Built internal admin dashboards and API integrations for operational teams, implementing pagination, RBAC authorization, audit logging, and error-resilient communication between microservices.</li>
+        <li>Led end-to-end AWS infrastructure modernization for Kyron&apos;s medical billing platform, architecting secure VPC networking, ALB-backed EC2 deployments, RDS PostgreSQL, S3/KMS encryption, and IAM least-privilege roles to strengthen reliability.</li>
+      </ul>
+    </div>
+
     {/* Kaplan */}
-    <div className="content active" id="kaplan">
+    <div className="content" id="kaplan">
       <div className="headline" data-aos-delay="50" data-aos="fade-up">
         <h4 className="job-title">Software Engineer</h4>
         <p className="location">Chicago, United States</p>
-        <p className="period">May 2024 – Present</p>
+        <p className="period">May 2024 – May 2025</p>
         <ul className="stack-list">
-          <li className="tag">Next.js</li>
-          <li className="tag">Reveal.js</li>
+          <li className="tag">Python</li>
           <li className="tag">LangGraph</li>
-          <li className="tag">Gemini 1.5</li>
+          <li className="tag">LangSmith</li>
           <li className="tag">Redis</li>
-          <li className="tag">Firebase</li>
+          <li className="tag">RAG</li>
+          <li className="tag">Docker</li>
+          <li className="tag">Kubernetes</li>
           <li className="tag">GCP</li>
         </ul>
       </div>
       <div className="line"></div>
       <ul className="responsibilities">
-        <li>Built a presentation tool using Reveal.js and enhanced an MCQ generator with Plate.js and Next.js; improved UX by 25% using Redux Toolkit.</li>
-        <li>Engineered AI orchestration with LangGraph and Gemini 1.5, leveraging Redis caching to reduce response time and boost system efficiency by 30%.</li>
-        <li>Implemented CI/CD with GitHub Actions and Docker for Firebase and GCP Cloud Run; enabled zero-downtime rollouts and real-time debugging with LogRocket.</li>
+        <li>Engineered robust AI workflow orchestration using Python with LangGraph, LangSmith, Redis caching, RAG pipelines, and semantic search embeddings to accelerate distributed processing and boost system response times by 30%.</li>
+        <li>Optimized CI/CD automation with GitHub Actions, Docker, and Kubernetes, enabling frictionless deployments to Firebase Functions and GCP Cloud Run, thereby enhancing reliability and scalability.</li>
+        <li>Advanced cloud-native infrastructure and agile delivery by implementing comprehensive monitoring and observability with Prometheus and Grafana, driving operational excellence across engineering teams.</li>
       </ul>
     </div>
 
@@ -361,10 +318,10 @@ What drives me is turning complexity into simple, durable solutions. I enjoy tac
       </div>
       <div className="line"></div>
       <ul className="responsibilities">
-        <li>Built backend services for payroll fraud detection using Spring MVC, Kafka, and JPA, increasing throughput by 60% and reducing latency.</li>
-        <li>Implemented secure logging with AWS Lambda and S3, improving W-2 processing speed 14× and reducing API latency by 55%.</li>
-        <li>Integrated Spring Security for method-level access control, strengthening data protection and compliance.</li>
-        <li>Migrated 120+ enterprise applications from EV5 to EV6 with OneNext tool using AWS cloud services.</li>
+        <li>Optimized a distributed, high-performance backend for ADP Payroll Fraud Detection using Spring MVC, Kafka, and Spring Data JPA, leveraging caching and asynchronous processing to boost throughput by 60% and reduce latency.</li>
+        <li>Implemented secure, scalable data logging for ADP Wage Payments with AWS Lambda and S3, improving traceability.</li>
+        <li>Integrated method-level Spring Security with AWS Cognito for granular role-based access control, strengthening data protection.</li>
+        <li>Migrated 120+ enterprise applications from EV5 to EV6 using ADP&apos;s OneNext tool along with AWS EC2 and CloudFormation to modernize infrastructure.</li>
       </ul>
     </div>
 
@@ -384,33 +341,12 @@ What drives me is turning complexity into simple, durable solutions. I enjoy tac
       </div>
       <div className="line"></div>
       <ul className="responsibilities">
-        <li>Automated IP workflows via Jakarta EE system using Java Servlets, JSP, and MySQL, reducing manual work and achieving 99.9% deadline compliance.</li>
-        <li>Built a multi-threaded Spring Boot search API with indexing optimizations for legal documents across MySQL and NoSQL.</li>
-        <li>Developed a secure patent repository using TLS encryption and AWS S3, enabling global data access with compliance.</li>
+        <li>Developed and deployed a Jakarta EE-based patent management system with JSPs and Servlets on Azure, automating IP workflows and ensuring 99.9% deadline compliance.</li>
+        <li>Designed a scalable Spring Boot-powered patent search API with multi-threading and indexing optimizations, leveraging Azure Blob Storage for secure document handling.</li>
       </ul>
     </div>
 
-    {/* Indian Servers */}
-    <div className="content" id="indianservers">
-      <div className="headline" data-aos-delay="50" data-aos="fade-up">
-        <h4 className="job-title">Full-stack Developer (Apprenticeship)</h4>
-        <p className="location">Hyderabad, Telangana, India (Hybrid)</p>
-        <p className="period">May 2021 – Jul 2021</p>
-        <ul className="stack-list">
-          <li className="tag">React</li>
-          <li className="tag">Java</li>
-          <li className="tag">MongoDB</li>
-          <li className="tag">API Development</li>
-          <li className="tag">Authentication</li>
-        </ul>
-      </div>
-      <div className="line"></div>
-      <ul className="responsibilities">
-        <li>Developed a lightweight API testing tool using React and Java to streamline testing workflows.</li>
-        <li>Built APIs for authentication and DB operations, increasing reliability and maintainability.</li>
-        <li>Integrated MongoDB for logging API activity, enhancing observability and data security.</li>
-      </ul>
-    </div>
+
   </div>
 </section>
 
@@ -465,8 +401,9 @@ What drives me is turning complexity into simple, durable solutions. I enjoy tac
               <div className="education">
                 <div className="education-item" data-aos="fade-up" data-aos-delay="100">
                   <h4 className="school">Illinois Institute of Technology</h4>
-                  <p className="degree-field">Master&apos;s degree - Computer Science</p>
-                
+                  <p className="degree-field">Master&apos;s in Computer Science (MCS), CGPA: 3.5/4.0</p>
+                  <p className="period">Aug 2023 – May 2025</p>
+                  <p className="achievement">Awarded $12,000 scholarship</p>
                 </div>
                 <div className="education-item" data-aos="fade-up" data-aos-delay="150">
                   <h4 className="school">Jawaharlal Nehru Technological University Hyderabad</h4>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Allow crawling but pages won't be indexed due to noindex meta tags
+# This lets search engines see the noindex directives on each page
