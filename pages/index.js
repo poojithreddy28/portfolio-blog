@@ -46,12 +46,12 @@ What drives me is turning complexity into simple, durable solutions while levera
                 </li>
               </ul>
             </div>
-            <div className="image" data-aos="fade-up">
+            {/* <div className="image" data-aos="fade-up">
               <div className="cover">
                 <Icon name="lines-vector" />
               </div>
               <img className="avatar" src="/assets/img/avatar.png" alt="Poojith Reddy Annachedu" />
-            </div>
+            </div> */}
           </div>
         </section>
         {/* <section className="blog-preview-section" id="blog">

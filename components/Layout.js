@@ -42,9 +42,9 @@ export default function Layout({ children, title = 'Poojith Reddy Annachedu' }) 
       <Head>
         <title>{title}</title>
         <meta name="description" content="Poojith Reddy's Portfolio and Blog" />
-        <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
+        {/* <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon" /> */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/assets/img/fav.png" />
+        {/* <link rel="icon" href="/assets/img/favicon.png" /> */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />

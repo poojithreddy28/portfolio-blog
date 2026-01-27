@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
 
+# Block resume from being indexed by search engines
+Disallow: /assets/PoojithResume.pdf
+Disallow: /assets/*.pdf
+
 # Allow crawling but pages won't be indexed due to noindex meta tags
 # This lets search engines see the noindex directives on each page
