@@ -87,10 +87,7 @@ export default function Layout({ children, title = 'Poojith Reddy Annachedu' }) 
               <li className="contact" data-aos-delay="550" data-aos="fade-down">
                 <Link href="/#contact" onClick={closeMenu}>Contact</Link>
               </li>
-              <li className="mobile-link" data-aos-delay="600" data-aos="fade-down">
-                <a href="/assets/PoojithResume.pdf" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Resume</a>
-              </li>
-              <li data-aos-delay="650" data-aos="fade-down" className="more-links">
+              <li data-aos-delay="600" data-aos="fade-down" className="more-links">
                 {/* <div className="more-links-icon">
                   <Icon name="more-links" />
                 </div>
@@ -109,9 +106,6 @@ export default function Layout({ children, title = 'Poojith Reddy Annachedu' }) 
             <div className="theme-color-toggle" onClick={toggleTheme}>
               {theme === 'light' ? <Icon name="moon" /> : <Icon name="sun" />}
             </div>
-            <a href="/assets/PoojithResume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light download-resume">
-              Resume
-            </a>
             <div className="mobile-menu-toggle" onClick={toggleMenu}>
               <Icon name="menu" />
             </div>

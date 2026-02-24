@@ -70,9 +70,6 @@ export default function Header() {
           </ul>
         </nav>
         <div className="right-content">
-          <a href="/assets/PoojithResume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light download-resume">
-            Resume
-          </a>
           <button 
             className="mobile-menu-toggle" 
             onClick={(e) => {

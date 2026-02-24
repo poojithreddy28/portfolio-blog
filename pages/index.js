@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { motion } from 'framer-motion';
 import Layout from '../components/Layout';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -22,29 +23,55 @@ export default function Home() {
 
   return (
     <Layout title="Poojith Reddy Annachedu | Portfolio">
-      <main>
+      <motion.main
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <section className="hero-section">
           <div className="container">
             <div className="content" data-aos="fade-up">
-              <h1 className="full-name">Poojith Reddy <span className="primary">Annachedu.</span></h1>
-              <p className="about">
-                Software Engineer with 4+ years of experience building scalable backend systems and cloud-native platforms using Java Spring, Python, and AWS. Designed intelligent automation pipelines using modern agent frameworks, RAG architectures, embeddings, and MCP-based integrations to streamline document processing and operational workflows.
-
-Delivered resilient microservices, distributed data pipelines, and AWS GCP infrastructure that improved system performance, reliability, and engineering efficiency at scale. My focus is on designing reliable, scalable systems with clean architectures and performance-first services that enable teams to move fast without breaking things.
-
-What drives me is turning complexity into simple, durable solutions while leveraging AI to create real leverage for engineering teams and operational workflows.              </p>
-              <ul className="social-icons">
-                <li>
+              <motion.h1 
+                className="full-name"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+              >
+                Poojith Reddy 
+              </motion.h1>
+              <motion.p 
+                className="about"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
+                Senior Software Engineer specializing in scalable backend systems, cloud infrastructure, and AI-powered automation. I architect resilient microservices and distributed data pipelines using Java Spring, Python, and AWS services. I love designing intelligent workflows with RAG architectures, agent frameworks, and modern LLM integrations.
+                <br /><br />
+                I turn complex problems into elegant, production-ready solutions that improve system performance and engineering velocity. From high-throughput APIs to infrastructure automation, I build systems that scale reliably and empower teams to ship faster.
+              </motion.p>
+              <motion.ul 
+                className="social-icons"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+              >
+                <motion.li
+                  whileHover={{ scale: 1.15, rotate: 5 }}
+                  whileTap={{ scale: 0.95 }}
+                >
                   <a href="https://github.com/poojithreddy28" target="_blank" rel="noopener noreferrer">
                     <Icon name="github" />
                   </a>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li
+                  whileHover={{ scale: 1.15, rotate: -5 }}
+                  whileTap={{ scale: 0.95 }}
+                >
                   <a href="https://www.linkedin.com/in/poojith-reddy-annachedu/" target="_blank" rel="noopener noreferrer">
                     <Icon name="linkedin" />
                   </a>
-                </li>
-              </ul>
+                </motion.li>
+              </motion.ul>
             </div>
             {/* <div className="image" data-aos="fade-up">
               <div className="cover">
@@ -54,31 +81,182 @@ What drives me is turning complexity into simple, durable solutions while levera
             </div> */}
           </div>
         </section>
-        {/* <section className="blog-preview-section" id="blog">
-  {/* <div className="container">
-    <div className="blog-preview-wrapper">
-      <h4 className="section-subtitle">— Recent Writings</h4>
-      <h2 className="section-title">From My Blog</h2>
-      <p className="blog-intro text">
-        I occasionally write about&nbsp;
-        <i className="fas fa-cogs"></i> <strong>backend systems</strong>,&nbsp;
-        <i className="fas fa-drafting-compass"></i> <strong>HLD & LLD</strong>,&nbsp;
-        <i className="fas fa-sitemap"></i> <strong>scalable distributed systems</strong>,&nbsp;
-        <i className="fas fa-code"></i> <strong>DevOps</strong>,&nbsp;
-        <i className="fas fa-terminal"></i> <strong>DSA</strong>, and&nbsp;
-        <i className="fas fa-laptop-code"></i> <strong>software engineering concepts</strong>. 
-        Whether it’s breaking down ideas or writing tutorials, I aim to create valuable content to help others grow.
-      </p>
-      <Link href="/blog" passHref>
-        <a className="blog-btn">
-          Explore Blog&nbsp; <i className="fas fa-arrow-right"></i>
-        </a>
-      </Link>
-    </div>
-  </div> */}
-{/* </section> */} 
 
-        {/* Skills Section */}
+        {/* Experience Section */}
+        <section className="experience-section" id="experience">
+          <div className="container">
+            <div className="side">
+              <div className="section-name" data-aos="fade-up">
+                <p className="above-title">Career path</p>
+                <h4 className="title">Work Experience</h4>
+              </div>
+              <div className="companies-list">
+                <div className="selector">
+                  <Icon name="arrow-right" />
+                </div>
+                <ul>
+                  <motion.li data-tab="bofa" className="active" data-aos="fade-up" whileHover={{ x: 10, transition: { duration: 0.2 } }} whileTap={{ scale: 0.98 }}>Bank of America</motion.li>
+                  <motion.li data-tab="iit" data-aos-delay="50" data-aos="fade-up" whileHover={{ x: 10, transition: { duration: 0.2 } }} whileTap={{ scale: 0.98 }}>Illinois Institute of Technology</motion.li>
+                  <motion.li data-tab="adp" data-aos-delay="100" data-aos="fade-up" whileHover={{ x: 10, transition: { duration: 0.2 } }} whileTap={{ scale: 0.98 }}>ADP</motion.li>
+                  <motion.li data-tab="hca" data-aos-delay="150" data-aos="fade-up" whileHover={{ x: 10, transition: { duration: 0.2 } }} whileTap={{ scale: 0.98 }}>HCA Healthcare</motion.li>
+                  <motion.li data-tab="indianservers" data-aos-delay="200" data-aos="fade-up" whileHover={{ x: 10, transition: { duration: 0.2 } }} whileTap={{ scale: 0.98 }}>Indian Servers</motion.li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Bank of America */}
+            <motion.div 
+              className="content active" 
+              id="bofa"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="headline" data-aos-delay="50" data-aos="fade-up">
+                <h4 className="job-title">Senior Software Engineer</h4>
+                <p className="location">Chicago, Illinois, United States (Hybrid)</p>
+                <p className="period">May 2024 – Present</p>
+                <ul className="stack-list">
+                  <li className="tag">Java</li>
+                  <li className="tag">Spring Boot</li>
+                  <li className="tag">AWS</li>
+                  <li className="tag">Microservices</li>
+                  <li className="tag">CI/CD</li>
+                  <li className="tag">Distributed Systems</li>
+                </ul>
+              </div>
+              <div className="line"></div>
+              <motion.ul 
+                className="responsibilities"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                <motion.li
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.4, delay: 0.3 }}
+                >
+                  Designing and building scalable backend systems and distributed services using Java, Spring Boot, and cloud-native patterns to support high-performance financial applications.
+                </motion.li>
+                <motion.li
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.4, delay: 0.4 }}
+                >
+                  Implementing microservices architectures with event-driven messaging, RESTful APIs, and robust data persistence layers to ensure reliability and performance at scale.
+                </motion.li>
+                <motion.li
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.4, delay: 0.5 }}
+                >
+                  Working with AWS infrastructure, CI/CD pipelines, and containerization to deliver resilient, observable systems that enable engineering teams to move fast without breaking things.
+                </motion.li>
+                <motion.li
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.4, delay: 0.6 }}
+                >
+                  Collaborating on AI-enabled features and automation workflows using modern agent frameworks, RAG architectures, and intelligent document processing to create operational leverage.
+                </motion.li>
+              </motion.ul>
+            </motion.div>
+
+            {/* Illinois Institute of Technology */}
+            <div className="content" id="iit">
+              <div className="headline" data-aos-delay="50" data-aos="fade-up">
+                <h4 className="job-title">Graduate Research And Teaching Assistant</h4>
+                <p className="location">Chicago, Illinois, United States (On-site)</p>
+                <p className="period">Sep 2023 – Apr 2024</p>
+                <ul className="stack-list">
+                  <li className="tag">Java</li>
+                  <li className="tag">Computer Networking</li>
+                  <li className="tag">Research</li>
+                  <li className="tag">Teaching</li>
+                </ul>
+              </div>
+              <div className="line"></div>
+              <ul className="responsibilities">
+                <li>Assisted in teaching and mentoring students in undergraduate and graduate computer science courses, providing guidance on programming concepts, algorithms, and system design.</li>
+                <li>Conducted research on distributed systems, networking protocols, and database optimization techniques, contributing to academic publications and innovative solutions.</li>
+                <li>Supported course preparation, grading, and lab sessions while helping students develop strong technical foundations in Java, networking, and software engineering principles.</li>
+              </ul>
+            </div>
+
+            {/* ADP */}
+            <div className="content" id="adp">
+              <div className="headline" data-aos-delay="50" data-aos="fade-up">
+                <h4 className="job-title">Software Engineer</h4>
+                <p className="location">Hyderabad, India</p>
+                <p className="period">Jul 2022 – Jul 2023</p>
+                <ul className="stack-list">
+                  <li className="tag">Spring Boot</li>
+                  <li className="tag">Spring MVC</li>
+                  <li className="tag">Kafka</li>
+                  <li className="tag">Spring Data JPA</li>
+                  <li className="tag">AWS</li>
+                  <li className="tag">Lambda</li>
+                  <li className="tag">DynamoDB</li>
+                  <li className="tag">Spring Security</li>
+                </ul>
+              </div>
+              <div className="line"></div>
+              <ul className="responsibilities">
+                <li>Optimized distributed, high-performance backend for ADP Payroll Fraud Detection using Spring MVC, Kafka, and Spring Data JPA, leveraging caching and asynchronous processing to boost throughput by 60% and reduce latency.</li>
+                <li>Implemented secure, scalable data logging for ADP Wage Payments with AWS Lambda and S3, improving traceability and audit readiness.</li>
+                <li>Enhanced W-2 processing speed by 14× and reduced API response time by 55% using event-driven AWS Step Functions, CloudWatch, and DynamoDB.</li>
+                <li>Integrated method-level Spring Security with AWS Cognito for granular role-based access control, strengthening data protection and compliance.</li>
+                <li>Migrated 120+ enterprise applications from EV5 to EV6 using ADP&apos;s OneNext tool and AWS EC2 and CloudFormation to modernize infrastructure.</li>
+              </ul>
+            </div>
+
+            {/* HCA Healthcare */}
+            <div className="content" id="hca">
+              <div className="headline" data-aos-delay="50" data-aos="fade-up">
+                <h4 className="job-title">Software Engineer & Intern</h4>
+                <p className="location">Hyderabad, Telangana, India (Hybrid)</p>
+                <p className="period">Jan 2020 – Jul 2022</p>
+                <ul className="stack-list">
+                  <li className="tag">Java</li>
+                  <li className="tag">Spring Boot</li>
+                  <li className="tag">MySQL</li>
+                  <li className="tag">Software Infrastructure</li>
+                  <li className="tag">Microservices</li>
+                </ul>
+              </div>
+              <div className="line"></div>
+              <ul className="responsibilities">
+                <li>Developed and maintained backend services for healthcare management systems using Java and Spring Boot, supporting critical patient data processing and clinical workflows.</li>
+                <li>Built RESTful APIs and microservices to integrate legacy systems with modern cloud infrastructure, improving system reliability and performance.</li>
+                <li>Collaborated with cross-functional teams to design database schemas, optimize queries, and ensure data integrity across distributed healthcare applications.</li>
+                <li>Participated in code reviews, testing, and deployment processes while following agile methodologies and best practices for software development in the healthcare domain.</li>
+              </ul>
+            </div>
+
+            {/* Indian Servers */}
+            <div className="content" id="indianservers">
+              <div className="headline" data-aos-delay="50" data-aos="fade-up">
+                <h4 className="job-title">Full-stack Developer (Apprenticeship)</h4>
+                <p className="location">Hyderabad, Telangana, India (Hybrid)</p>
+                <p className="period">May 2021 – Jul 2021</p>
+                <ul className="stack-list">
+                  <li className="tag">React</li>
+                  <li className="tag">Java</li>
+                  <li className="tag">MongoDB</li>
+                  <li className="tag">Python</li>
+                </ul>
+              </div>
+              <div className="line"></div>
+              <ul className="responsibilities">
+                <li>Assisted in developing a lightweight API testing tool using React and Java to streamline basic testing workflows.</li>
+                <li>Supported the creation of APIs for authentication and database operations, improving system reliability.</li>
+                <li>Contributed to integrating MongoDB for logging API activity and enhancing data security.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
         <section className="service-section" id="services">
           <div className="container">
             <div className="section-name center" data-aos="fade-up">
@@ -88,7 +266,20 @@ What drives me is turning complexity into simple, durable solutions while levera
               </div>
             </div>
             <div className="service-item-wrapper">
-              <div className="service-item" data-aos="fade-up" data-aos-delay="200">
+              <motion.div 
+                className="service-item" 
+                data-aos="fade-up" 
+                data-aos-delay="200"
+                whileHover={{ 
+                  scale: 1.05, 
+                  boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
+                  transition: { duration: 0.3 }
+                }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+              >
                 <h4 className="vstitle">Software Development</h4>
                 <ul className="bulletp">
                   <li>Data Structures and Algorithms</li>
@@ -103,8 +294,21 @@ What drives me is turning complexity into simple, durable solutions while levera
                   <li>SAFE Agile Framework</li>
                   <li>CI/CD Pipelines</li>
                 </ul>
-              </div>
-              <div className="service-item" data-aos="fade-up" data-aos-delay="250">
+              </motion.div>
+              <motion.div 
+                className="service-item" 
+                data-aos="fade-up" 
+                data-aos-delay="250"
+                whileHover={{ 
+                  scale: 1.05, 
+                  boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
+                  transition: { duration: 0.3 }
+                }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
                 <h4 className="vstitle">Languages/Frameworks</h4>
                 <ul className="bulletp">
                   <li>Java, Python, JavaScript, C, C++</li>
@@ -116,8 +320,21 @@ What drives me is turning complexity into simple, durable solutions while levera
                   <li>REST API, FastAPI, Flask, Node.js</li>
                   <li>HTML, CSS, JSON</li>
                 </ul>
-              </div>
-              <div className="service-item" data-aos="fade-up" data-aos-delay="300">
+              </motion.div>
+              <motion.div 
+                className="service-item" 
+                data-aos="fade-up" 
+                data-aos-delay="300"
+                whileHover={{ 
+                  scale: 1.05, 
+                  boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
+                  transition: { duration: 0.3 }
+                }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
                 <h4 className="vstitle">Technologies & Infrastructure</h4>
                 <ul className="bulletp">
                   <li>AWS, GCP, Docker, Kubernetes</li>
@@ -129,7 +346,7 @@ What drives me is turning complexity into simple, durable solutions while levera
                   <li>OAuth2, JWT, IAM</li>
                   <li>CI/CD Pipelines, JIRA</li>
                 </ul>
-              </div>
+              </motion.div>
             </div>
           </div>
         </section>
@@ -158,11 +375,25 @@ What drives me is turning complexity into simple, durable solutions while levera
 
           {/* <!-- GitHub Analytics Forecasting Platform --> */}
           <div className="swiper-slide" data-aos="fade-up" data-aos-delay="300">
-            <article className="portfolio-item">
+            <motion.article 
+              className="portfolio-item"
+              whileHover={{ 
+                y: -10,
+                boxShadow: "0 20px 40px rgba(0,0,0,0.15)",
+                transition: { duration: 0.3 }
+              }}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
               <a href="https://github.com/poojithreddy28/github-analytics-forecasting" target="_blank" rel="noopener noreferrer">
-                <figure>
+                <motion.figure
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                >
                   <img src="/assets/img/github_analytics.png" alt="GitHub Analytics Forecasting Platform" />
-                </figure>
+                </motion.figure>
                 <div className="detail">
                   <h4 className="title">GitHub Analytics Forecasting Platform</h4>
                   <div className="bottom">
@@ -175,16 +406,30 @@ What drives me is turning complexity into simple, durable solutions while levera
                   </div>
                 </div>
               </a>
-            </article>
+            </motion.article>
           </div>
 
           {/* <!-- RetailPulse SmartHomes --> */}
           <div className="swiper-slide" data-aos="fade-up" data-aos-delay="350">
-            <article className="portfolio-item">
+            <motion.article 
+              className="portfolio-item"
+              whileHover={{ 
+                y: -10,
+                boxShadow: "0 20px 40px rgba(0,0,0,0.15)",
+                transition: { duration: 0.3 }
+              }}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
               <a href="https://github.com/poojithreddy28/SpringBoot-MicroServices" target="_blank" rel="noopener noreferrer">
-                <figure>
+                <motion.figure
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                >
                   <img src="/assets/img/retail_microservices.png" alt="RetailPulse SmartHomes" />
-                </figure>
+                </motion.figure>
                 <div className="detail">
                   <h4 className="title">RetailPulse SmartHomes</h4>
                   <div className="bottom">
@@ -199,16 +444,30 @@ What drives me is turning complexity into simple, durable solutions while levera
                   </div>
                 </div>
               </a>
-            </article>
+            </motion.article>
           </div>
 
           {/* <!-- SmartHomes E-commerce Platform --> */}
           <div className="swiper-slide" data-aos="fade-up" data-aos-delay="400">
-            <article className="portfolio-item">
+            <motion.article 
+              className="portfolio-item"
+              whileHover={{ 
+                y: -10,
+                boxShadow: "0 20px 40px rgba(0,0,0,0.15)",
+                transition: { duration: 0.3 }
+              }}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
               <a href="https://github.com/poojithreddy28/SmartHomes" target="_blank" rel="noopener noreferrer">
-                <figure>
+                <motion.figure
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                >
                   <img src="/assets/img/smart_home.png" alt="SmartHomes E-commerce" />
-                </figure>
+                </motion.figure>
                 <div className="detail">
                   <h4 className="title">SmartHomes E-commerce Platform</h4>
                   <div className="bottom">
@@ -220,133 +479,12 @@ What drives me is turning complexity into simple, durable solutions while levera
                   </div>
                 </div>
               </a>
-            </article>
+            </motion.article>
           </div>
 
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-        {/* Experience Section */}
-
-<section className="experience-section" id="experience">
-  <div className="container">
-    <div className="side">
-      <div className="section-name" data-aos="fade-up">
-        <p className="above-title">Career path</p>
-        <h4 className="title">Work Experience</h4>
-      </div>
-      <div className="companies-list">
-        <div className="selector">
-          <Icon name="arrow-right" />
-        </div>
-        <ul>
-          <li data-tab="kyron" className="active" data-aos="fade-up">Kyron Medical</li>
-          <li data-tab="kaplan" data-aos-delay="50" data-aos="fade-up">Kaplan</li>
-          <li data-tab="adp" data-aos-delay="100" data-aos="fade-up">ADP</li>
-          <li data-tab="prometheus" data-aos-delay="150" data-aos="fade-up">Prometheus Patent Services</li>
-        </ul>
-      </div>
-    </div>
-
-    {/* Kyron Medical */}
-    <div className="content active" id="kyron">
-      <div className="headline" data-aos-delay="50" data-aos="fade-up">
-        <h4 className="job-title">Software Engineer</h4>
-        <p className="location">United States</p>
-        <p className="period">May 2025 – Present</p>
-        <ul className="stack-list">
-          <li className="tag">OpenAI APIs</li>
-          <li className="tag">LangChain</li>
-          <li className="tag">Python</li>
-          <li className="tag">AWS</li>
-          <li className="tag">PostgreSQL</li>
-          <li className="tag">S3</li>
-          <li className="tag">IAM</li>
-        </ul>
-      </div>
-      <div className="line"></div>
-      <ul className="responsibilities">
-        <li>Developed AI-powered utilities and internal tooling using OpenAI APIs, LangChain, and embeddings for document classification and claims triage, accelerating internal review workflows and cutting clerical workloads by 20%.</li>
-        <li>Implemented scalable data-processing pipelines, including a Python-based scraper for CVS client workflows, extracting structured healthcare data from multi-step web flows and increasing downstream processing accuracy by 30%.</li>
-        <li>Built internal admin dashboards and API integrations for operational teams, implementing pagination, RBAC authorization, audit logging, and error-resilient communication between microservices.</li>
-        <li>Led end-to-end AWS infrastructure modernization for Kyron&apos;s medical billing platform, architecting secure VPC networking, ALB-backed EC2 deployments, RDS PostgreSQL, S3/KMS encryption, and IAM least-privilege roles to strengthen reliability.</li>
-      </ul>
-    </div>
-
-    {/* Kaplan */}
-    <div className="content" id="kaplan">
-      <div className="headline" data-aos-delay="50" data-aos="fade-up">
-        <h4 className="job-title">Software Engineer</h4>
-        <p className="location">Chicago, United States</p>
-        <p className="period">May 2024 – May 2025</p>
-        <ul className="stack-list">
-          <li className="tag">Python</li>
-          <li className="tag">LangGraph</li>
-          <li className="tag">LangSmith</li>
-          <li className="tag">Redis</li>
-          <li className="tag">RAG</li>
-          <li className="tag">Docker</li>
-          <li className="tag">Kubernetes</li>
-          <li className="tag">GCP</li>
-        </ul>
-      </div>
-      <div className="line"></div>
-      <ul className="responsibilities">
-        <li>Engineered robust AI workflow orchestration using Python with LangGraph, LangSmith, Redis caching, RAG pipelines, and semantic search embeddings to accelerate distributed processing and boost system response times by 30%.</li>
-        <li>Optimized CI/CD automation with GitHub Actions, Docker, and Kubernetes, enabling frictionless deployments to Firebase Functions and GCP Cloud Run, thereby enhancing reliability and scalability.</li>
-        <li>Advanced cloud-native infrastructure and agile delivery by implementing comprehensive monitoring and observability with Prometheus and Grafana, driving operational excellence across engineering teams.</li>
-      </ul>
-    </div>
-
-    {/* ADP */}
-    <div className="content" id="adp">
-      <div className="headline" data-aos-delay="50" data-aos="fade-up">
-        <h4 className="job-title">Software Engineer</h4>
-        <p className="location">Hyderabad, India</p>
-        <p className="period">Apr 2022 – Jul 2023</p>
-        <ul className="stack-list">
-          <li className="tag">Spring Boot</li>
-          <li className="tag">Kafka</li>
-          <li className="tag">Spring MVC</li>
-          <li className="tag">AWS</li>
-          <li className="tag">JPA</li>
-          <li className="tag">Lambda</li>
-        </ul>
-      </div>
-      <div className="line"></div>
-      <ul className="responsibilities">
-        <li>Optimized a distributed, high-performance backend for ADP Payroll Fraud Detection using Spring MVC, Kafka, and Spring Data JPA, leveraging caching and asynchronous processing to boost throughput by 60% and reduce latency.</li>
-        <li>Implemented secure, scalable data logging for ADP Wage Payments with AWS Lambda and S3, improving traceability.</li>
-        <li>Integrated method-level Spring Security with AWS Cognito for granular role-based access control, strengthening data protection.</li>
-        <li>Migrated 120+ enterprise applications from EV5 to EV6 using ADP&apos;s OneNext tool along with AWS EC2 and CloudFormation to modernize infrastructure.</li>
-      </ul>
-    </div>
-
-    {/* Prometheus Patent Services */}
-    <div className="content" id="prometheus">
-      <div className="headline" data-aos-delay="50" data-aos="fade-up">
-        <h4 className="job-title">Software Developer Intern & Engineer</h4>
-        <p className="location">Hyderabad, India</p>
-        <p className="period">Dec 2020 – Mar 2022</p>
-        <ul className="stack-list">
-          <li className="tag">Java</li>
-          <li className="tag">Jakarta EE</li>
-          <li className="tag">Spring Boot</li>
-          <li className="tag">MySQL</li>
-          <li className="tag">NoSQL</li>
-        </ul>
-      </div>
-      <div className="line"></div>
-      <ul className="responsibilities">
-        <li>Developed and deployed a Jakarta EE-based patent management system with JSPs and Servlets on Azure, automating IP workflows and ensuring 99.9% deadline compliance.</li>
-        <li>Designed a scalable Spring Boot-powered patent search API with multi-threading and indexing optimizations, leveraging Azure Blob Storage for secure document handling.</li>
-      </ul>
-    </div>
-
-
   </div>
 </section>
 
@@ -399,17 +537,35 @@ What drives me is turning complexity into simple, durable solutions while levera
             </div>
             <div className="education-skill-wrapper">
               <div className="education">
-                <div className="education-item" data-aos="fade-up" data-aos-delay="100">
+                <motion.div 
+                  className="education-item" 
+                  data-aos="fade-up" 
+                  data-aos-delay="100"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
+                >
                   <h4 className="school">Illinois Institute of Technology</h4>
                   <p className="degree-field">Master&apos;s in Computer Science (MCS), CGPA: 3.5/4.0</p>
                   <p className="period">Aug 2023 – May 2025</p>
                   <p className="achievement">Awarded $12,000 scholarship</p>
-                </div>
-                <div className="education-item" data-aos="fade-up" data-aos-delay="150">
+                </motion.div>
+                <motion.div 
+                  className="education-item" 
+                  data-aos="fade-up" 
+                  data-aos-delay="150"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
+                >
                   <h4 className="school">Jawaharlal Nehru Technological University Hyderabad</h4>
                   <p className="degree-field">Bachelor&apos;s degree - Electronics and Communications Engineering</p>
                   
-                </div>
+                </motion.div>
               </div>
               <div className="skill">
                 <div className="description" data-aos="fade-up" data-aos-delay="50">
@@ -459,18 +615,47 @@ What drives me is turning complexity into simple, durable solutions while levera
         {/* Contact Section */}
         <section className="contact-section" id="contact">
           <div className="container">
-            <div className="contact-wrapper">
+            <motion.div 
+              className="contact-wrapper"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
               <div className="contact-info">
-                <h2 className="section-title">Contact Me</h2>
-                <p className="section-subtitle">You can reach me via email:</p>
-                <div className="email-box">
+                <motion.h2 
+                  className="section-title"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                >
+                  Contact Me
+                </motion.h2>
+                <motion.p 
+                  className="section-subtitle"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                >
+                  You can reach me via email:
+                </motion.p>
+                <motion.div 
+                  className="email-box"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                  whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+                >
                   <a href="mailto:poojithannachedu.work@gmail.com" className="email-link">poojithannachedu.work@gmail.com</a>
-                </div>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </section>
-      </main>
+      </motion.main>
     </Layout>
   );
 }

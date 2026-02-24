@@ -13,6 +13,7 @@
     "@aws-sdk/lib-dynamodb": "^3.788.0",
     "aos": "^2.3.4",
     "aws-sdk": "^2.1692.0",
+    "framer-motion": "^12.34.3",
     "gray-matter": "^4.0.3",
     "next": "15.2.4",
     "next-mdx-remote": "^5.0.0",
